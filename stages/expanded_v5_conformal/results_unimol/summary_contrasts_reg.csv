@@ -1,0 +1,13 @@
+kind,contrast,base,stype,dataset,repeats,mean_delta,sd_delta,sign_all,cov_a,cov_b,both_hold_all,sign_interpretable
+reg,P1: Laplace - Deterministic,Uni-Mol,scaffold,esol,3,0.1266945853544447,0.08133288748015378,wider,0.8820058997050149,0.8790560471976402,True,wider
+reg,P1: Laplace - Deterministic,Uni-Mol,scaffold,freesolv,3,1.0423571415356034,0.16863412137728767,wider,0.9589743589743591,0.8871794871794872,False,not interpretable
+reg,P1: Laplace - Deterministic,Uni-Mol,scaffold,lipo,3,-0.043932676144251635,0.03427491785714332,narrower,0.919047619047619,0.9206349206349206,False,not interpretable
+reg,P1: Laplace - Deterministic,Uni-Mol,scaffold,qm7,3,-1.2793623287129776,1.4470078409552292,narrower,0.8580518844836025,0.8580518844836025,False,not interpretable
+reg,P2: Laplace - Ensembles,Uni-Mol,scaffold,esol,3,0.3257071665924016,0.10740364161245039,wider,0.8820058997050149,0.8495575221238938,True,wider
+reg,P2: Laplace - Ensembles,Uni-Mol,scaffold,freesolv,3,0.8503035733962504,0.6494040868704173,mixed,0.9589743589743591,0.9384615384615383,True,mixed
+reg,P2: Laplace - Ensembles,Uni-Mol,scaffold,lipo,3,0.031022197888000685,0.02323426051960587,wider,0.919047619047619,0.9142857142857143,False,not interpretable
+reg,P2: Laplace - Ensembles,Uni-Mol,scaffold,qm7,3,20.05129380660303,12.475579428904803,wider,0.8580518844836025,0.8722466960352423,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,esol,3,-0.006301414330860548,0.004753912644098779,mixed,0.8820058997050149,0.8820058997050149,True,mixed
+reg,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,freesolv,3,0.0,0.0,mixed,0.9589743589743591,0.9589743589743591,True,mixed
+reg,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,lipo,3,0.06455013159336682,0.08621951545229074,mixed,0.9166666666666666,0.9182539682539682,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,qm7,3,0.0,0.0,mixed,0.8580518844836025,0.8580518844836025,False,not interpretable

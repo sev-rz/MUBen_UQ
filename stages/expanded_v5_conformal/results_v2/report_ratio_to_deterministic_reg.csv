@@ -1,0 +1,55 @@
+stype,base,method,cases,ratio_to_deterministic,coverage,share_cases_holding
+random,ChemBERTa,BBP,12,0.9516,0.9199,0.6667
+random,ChemBERTa,Ensembles,12,0.9631,0.9266,0.75
+random,ChemBERTa,Laplace,12,0.9855,0.9261,0.9167
+random,ChemBERTa,Laplace constant,12,0.9828,0.9265,0.8333
+random,ChemBERTa,MC dropout,12,0.8053,0.9227,0.6667
+random,ChemBERTa,Novelty Laplace,12,0.9652,0.9235,0.8333
+random,ChemBERTa,Novelty only,12,0.976,0.9223,0.8333
+random,ChemBERTa,SGLD,12,0.9163,0.9118,0.9167
+random,ChemBERTa,SWAG,12,1.0411,0.9252,0.8333
+random,DNN,BBP,12,1.1161,0.9249,0.5833
+random,DNN,Ensembles,12,0.9583,0.9195,0.8333
+random,DNN,Laplace,12,0.9918,0.918,0.8333
+random,DNN,Laplace constant,12,0.98,0.9162,0.8333
+random,DNN,MC dropout,12,1.0048,0.9205,0.8333
+random,DNN,Novelty Laplace,12,0.9842,0.9168,0.8333
+random,DNN,Novelty only,12,0.9835,0.9159,0.75
+random,DNN,SGLD,12,1.207,0.9191,0.6667
+random,DNN,SWAG,12,1.0079,0.918,0.9167
+random,GIN,BBP,12,1.0822,0.9046,0.9167
+random,GIN,Ensembles,12,0.9872,0.9075,0.8333
+random,GIN,Laplace,12,0.9836,0.9038,0.8333
+random,GIN,Laplace constant,12,0.9876,0.9025,0.8333
+random,GIN,MC dropout,12,0.9888,0.9079,0.9167
+random,GIN,Novelty Laplace,12,0.9887,0.9041,0.8333
+random,GIN,Novelty only,12,0.9957,0.9095,0.8333
+random,GIN,SGLD,12,3.5859,0.9067,0.8333
+random,GIN,SWAG,12,0.9738,0.909,0.6667
+scaffold,ChemBERTa,BBP,12,1.0389,0.932,0.9167
+scaffold,ChemBERTa,Ensembles,4,0.957,0.9184,1.0
+scaffold,ChemBERTa,Laplace,12,1.0058,0.9261,0.6667
+scaffold,ChemBERTa,Laplace constant,12,1.0089,0.9289,0.5833
+scaffold,ChemBERTa,MC dropout,12,0.9335,0.9262,0.5833
+scaffold,ChemBERTa,Novelty Laplace,12,1.0141,0.9257,0.75
+scaffold,ChemBERTa,Novelty only,12,1.0069,0.9198,0.75
+scaffold,ChemBERTa,SGLD,12,0.9918,0.928,0.5833
+scaffold,ChemBERTa,SWAG,12,1.0184,0.9197,0.75
+scaffold,DNN,BBP,12,1.1697,0.9302,0.5
+scaffold,DNN,Ensembles,4,0.9278,0.91,0.75
+scaffold,DNN,Laplace,12,1.0006,0.9016,0.8333
+scaffold,DNN,Laplace constant,12,0.9369,0.9012,0.9167
+scaffold,DNN,MC dropout,12,0.9962,0.9054,0.9167
+scaffold,DNN,Novelty Laplace,12,0.9329,0.8971,0.8333
+scaffold,DNN,Novelty only,12,0.9781,0.9074,0.75
+scaffold,DNN,SGLD,12,1.1577,0.9328,0.4167
+scaffold,DNN,SWAG,12,1.0487,0.9088,0.9167
+scaffold,GIN,BBP,12,0.955,0.9291,0.75
+scaffold,GIN,Ensembles,4,0.9107,0.9384,0.75
+scaffold,GIN,Laplace,12,0.9937,0.9285,0.5833
+scaffold,GIN,Laplace constant,12,0.9909,0.9301,0.5833
+scaffold,GIN,MC dropout,12,0.9825,0.9231,0.5833
+scaffold,GIN,Novelty Laplace,12,1.0,0.9301,0.5
+scaffold,GIN,Novelty only,12,0.9865,0.9275,0.5
+scaffold,GIN,SGLD,12,1.1675,0.9396,0.3333
+scaffold,GIN,SWAG,12,0.9624,0.9206,0.8333

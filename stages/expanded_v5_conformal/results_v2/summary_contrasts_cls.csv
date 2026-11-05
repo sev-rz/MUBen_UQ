@@ -1,0 +1,61 @@
+kind,contrast,base,stype,dataset,repeats,mean_delta,sd_delta,sign_all,cov_a,cov_b,both_hold_all,sign_interpretable
+cls,P1: Laplace - Deterministic,ChemBERTa,random,bace,3,0.013157894736842035,0.02990829319514444,mixed,0.8859649122807017,0.8947368421052632,False,not interpretable
+cls,P1: Laplace - Deterministic,ChemBERTa,random,bbbp,3,-0.009803921568627416,0.010589445585633721,mixed,0.9232026143790849,0.9248366013071897,True,mixed
+cls,P1: Laplace - Deterministic,ChemBERTa,random,clintox,3,-0.006756756756756799,0.004777748521530756,mixed,0.9144144144144145,0.9200450450450451,False,not interpretable
+cls,P1: Laplace - Deterministic,ChemBERTa,random,tox21,3,-0.0010289054063847836,0.0006617667371361745,narrower,0.9006622353920785,0.9012868721372996,True,narrower
+cls,P1: Laplace - Deterministic,ChemBERTa,scaffold,bace,3,0.11622807017543879,0.0031013455315198764,wider,0.9100877192982456,0.899122807017544,True,wider
+cls,P1: Laplace - Deterministic,ChemBERTa,scaffold,bbbp,3,0.017973856209150336,0.025418871219124273,mixed,0.545751633986928,0.5375816993464052,False,not interpretable
+cls,P1: Laplace - Deterministic,ChemBERTa,scaffold,clintox,3,0.0,0.0,mixed,0.9346846846846848,0.9346846846846848,False,not interpretable
+cls,P1: Laplace - Deterministic,ChemBERTa,scaffold,tox21,3,0.0006537917894636388,0.0001379248891677997,wider,0.9042088583070452,0.9040296196693962,True,wider
+cls,P1: Laplace - Deterministic,DNN,random,bace,3,0.0,0.0,mixed,0.8706140350877192,0.8706140350877192,False,not interpretable
+cls,P1: Laplace - Deterministic,DNN,random,bbbp,3,0.0032679738562091387,0.0023108064744658333,mixed,0.9199346405228758,0.9199346405228758,True,mixed
+cls,P1: Laplace - Deterministic,DNN,random,clintox,3,0.0,0.0,mixed,0.9087837837837839,0.9087837837837839,False,not interpretable
+cls,P1: Laplace - Deterministic,DNN,random,tox21,3,-0.0007374299029362744,0.000796761553664162,mixed,0.8996934360717598,0.9006678293916672,True,mixed
+cls,P1: Laplace - Deterministic,DNN,scaffold,bace,3,0.032894736842105456,0.00537168803241904,wider,0.8355263157894738,0.8289473684210527,False,not interpretable
+cls,P1: Laplace - Deterministic,DNN,scaffold,bbbp,3,0.0,0.0,mixed,0.5947712418300654,0.5947712418300654,False,not interpretable
+cls,P1: Laplace - Deterministic,DNN,scaffold,clintox,3,0.0,0.0,mixed,0.8265765765765766,0.8265765765765766,False,not interpretable
+cls,P1: Laplace - Deterministic,DNN,scaffold,tox21,3,-0.0017192879924194198,0.0007104325436663086,narrower,0.9007621991291437,0.9015353126374815,True,narrower
+cls,P1: Laplace - Deterministic,GIN,random,bace,3,0.008771929824561505,0.012405382126079922,mixed,0.8903508771929824,0.8859649122807017,True,mixed
+cls,P1: Laplace - Deterministic,GIN,random,bbbp,3,-0.004901960784313782,0.006932419423397605,mixed,0.8725490196078431,0.8741830065359477,False,not interpretable
+cls,P1: Laplace - Deterministic,GIN,random,clintox,3,-0.0011261261261260962,0.0015925828405101996,mixed,0.8828828828828831,0.8828828828828831,True,mixed
+cls,P1: Laplace - Deterministic,GIN,random,tox21,3,-0.0009271083040490735,0.0009074566707665457,mixed,0.9000204081273767,0.9003526717854432,True,mixed
+cls,P1: Laplace - Deterministic,GIN,scaffold,bace,3,0.002192982456140413,0.0031013455315200334,mixed,0.8289473684210527,0.8289473684210527,False,not interpretable
+cls,P1: Laplace - Deterministic,GIN,scaffold,bbbp,3,-0.0016339869281045323,0.006113819259434651,mixed,0.6094771241830066,0.6127450980392157,False,not interpretable
+cls,P1: Laplace - Deterministic,GIN,scaffold,clintox,3,0.004504504504504496,0.006370331362040956,mixed,0.670045045045045,0.6677927927927928,False,not interpretable
+cls,P1: Laplace - Deterministic,GIN,scaffold,tox21,3,-0.002881647748399644,0.000613572833322549,narrower,0.902052078545271,0.9030017648392042,True,narrower
+cls,P2: Laplace - Ensembles,ChemBERTa,random,bace,3,0.05701754385964904,0.07678570789478759,mixed,0.8859649122807017,0.8815789473684209,False,not interpretable
+cls,P2: Laplace - Ensembles,ChemBERTa,random,bbbp,3,-0.011437908496731911,0.02345212433726702,mixed,0.9232026143790849,0.9297385620915034,True,mixed
+cls,P2: Laplace - Ensembles,ChemBERTa,random,clintox,3,0.010135135135135087,0.011033737580104383,mixed,0.9144144144144145,0.9076576576576576,False,not interpretable
+cls,P2: Laplace - Ensembles,ChemBERTa,random,tox21,3,0.0059776910955148255,0.004504273111432278,wider,0.9006622353920785,0.8984665089803644,True,wider
+cls,P2: Laplace - Ensembles,ChemBERTa,scaffold,bace,3,0.20614035087719315,0.006202691063039962,wider,0.9100877192982456,0.8552631578947368,True,wider
+cls,P2: Laplace - Ensembles,ChemBERTa,scaffold,bbbp,3,0.037581699346405206,0.0023108064744658333,wider,0.545751633986928,0.5441176470588235,False,not interpretable
+cls,P2: Laplace - Ensembles,ChemBERTa,scaffold,clintox,3,-0.00788288288288308,0.02949504696781257,mixed,0.9346846846846848,0.945945945945946,False,not interpretable
+cls,P2: Laplace - Ensembles,ChemBERTa,scaffold,tox21,3,0.008015502449174964,0.0020626327393421934,wider,0.9042088583070452,0.9036020069656762,True,wider
+cls,P2: Laplace - Ensembles,DNN,random,bace,3,-0.00877192982456143,0.022364120673652548,mixed,0.8706140350877192,0.8771929824561404,False,not interpretable
+cls,P2: Laplace - Ensembles,DNN,random,bbbp,3,0.02124183006535933,0.018914766181029816,mixed,0.9199346405228758,0.9183006535947712,True,mixed
+cls,P2: Laplace - Ensembles,DNN,random,clintox,3,0.0033783783783783252,0.030342778345287032,mixed,0.9087837837837839,0.9076576576576576,False,not interpretable
+cls,P2: Laplace - Ensembles,DNN,random,tox21,3,0.004782081611348114,0.004989977351591689,mixed,0.8996934360717598,0.9000826435043084,True,mixed
+cls,P2: Laplace - Ensembles,DNN,scaffold,bace,3,0.013157894736842035,0.018608073189119573,mixed,0.8355263157894738,0.8355263157894738,False,not interpretable
+cls,P2: Laplace - Ensembles,DNN,scaffold,bbbp,3,0.022875816993464044,0.01666346246272151,mixed,0.5947712418300654,0.5882352941176471,False,not interpretable
+cls,P2: Laplace - Ensembles,DNN,scaffold,clintox,3,0.06306306306306313,0.052651665439463785,mixed,0.8265765765765766,0.7804054054054054,False,not interpretable
+cls,P2: Laplace - Ensembles,DNN,scaffold,tox21,3,0.0019406955456708896,0.0035634090443686815,mixed,0.9007621991291437,0.9021428946403938,True,mixed
+cls,P2: Laplace - Ensembles,GIN,random,bace,3,0.004385964912280678,0.020336882665560645,mixed,0.8903508771929824,0.8925438596491229,True,mixed
+cls,P2: Laplace - Ensembles,GIN,random,bbbp,3,-1.8503717077085943e-16,0.018341457778303788,mixed,0.8725490196078431,0.8709150326797386,False,not interpretable
+cls,P2: Laplace - Ensembles,GIN,random,clintox,3,0.042792792792792876,0.042135781382589554,mixed,0.8828828828828831,0.9065315315315315,True,mixed
+cls,P2: Laplace - Ensembles,GIN,random,tox21,3,0.0025066213974244134,0.0029474355669887676,mixed,0.9000204081273767,0.9034398704702635,True,mixed
+cls,P2: Laplace - Ensembles,GIN,scaffold,bace,3,0.006578947368421166,0.02842430130880646,mixed,0.8289473684210527,0.8421052631578947,False,not interpretable
+cls,P2: Laplace - Ensembles,GIN,scaffold,bbbp,3,-0.02777777777777764,0.03235129064252193,narrower,0.6094771241830066,0.6470588235294118,False,not interpretable
+cls,P2: Laplace - Ensembles,GIN,scaffold,clintox,3,0.009009009009008992,0.006941907661001095,mixed,0.670045045045045,0.6756756756756758,False,not interpretable
+cls,P2: Laplace - Ensembles,GIN,scaffold,tox21,3,0.01959397206061449,0.01957904970561205,wider,0.902052078545271,0.904037982986658,True,wider
+cls,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,bace,3,0.09429824561403503,0.0365643245625725,wider,0.9539473684210527,0.9298245614035089,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,bbbp,3,0.0,0.0,mixed,0.545751633986928,0.545751633986928,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,clintox,3,-0.002252252252252266,0.003185165681020504,mixed,0.9324324324324326,0.9346846846846848,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,tox21,3,-0.000366714801227556,0.0004965758740474838,mixed,0.9043868458881471,0.9042584491147855,True,mixed
+cls,P3: Novelty Laplace - Laplace constant,DNN,scaffold,bace,3,0.12280701754385959,0.03054471113417574,wider,0.8837719298245613,0.8333333333333334,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,DNN,scaffold,bbbp,3,0.0016339869281045323,0.0023108064744657812,mixed,0.5947712418300654,0.5947712418300654,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,DNN,scaffold,clintox,3,-0.001126126126126133,0.004213578138258969,mixed,0.8265765765765766,0.8265765765765766,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,DNN,scaffold,tox21,3,-0.0006286333387821585,0.001126687175439858,mixed,0.9008264164729359,0.9009097659743118,True,mixed
+cls,P3: Novelty Laplace - Laplace constant,GIN,scaffold,bace,3,0.03728070175438599,0.04374986259486851,mixed,0.8421052631578947,0.8289473684210527,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,GIN,scaffold,bbbp,3,0.0,0.004002434220234118,mixed,0.6127450980392157,0.6111111111111112,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,GIN,scaffold,clintox,3,0.0,0.0,mixed,0.670045045045045,0.670045045045045,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,GIN,scaffold,tox21,3,-0.0004229217123155049,0.0022023629315220438,mixed,0.9016572180854387,0.9019418916026085,True,mixed

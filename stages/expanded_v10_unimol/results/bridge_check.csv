@@ -1,0 +1,14 @@
+dataset,metric,authors,ours,n,d,ci95_lo,ci95_hi,class
+esol,rmse,0.8507,0.8378,10/10,0.6,-0.0074,0.0333,consistent
+esol,mae,0.6796,0.6641,10/10,0.81,-0.0025,0.0335,consistent
+esol,nll,0.6988,0.7264,10/10,-0.12,-0.2483,0.193,consistent
+esol,ce,0.0465,0.0491,10/10,-0.57,-0.0069,0.0019,consistent
+bace,roc-auc,0.8195,0.8281,10/10,-0.39,-0.0301,0.0128,consistent
+bace,prc-auc,0.8025,0.8158,10/10,-0.4,-0.0448,0.0183,consistent
+bace,ece,0.245,0.2567,10/10,-0.22,-0.0613,0.0379,consistent
+bace,nll,0.8556,0.8768,10/10,-0.13,-0.1795,0.1371,consistent
+bace,brier,0.2518,0.2549,10/10,-0.08,-0.0401,0.0338,consistent
+qm7,rmse,103.9922,102.2895,5/5,0.57,-3.0766,6.482,consistent
+qm7,mae,53.1916,53.8066,5/5,-0.3,-3.613,2.3831,consistent
+qm7,nll,4.3968,4.4791,5/5,-0.63,-0.2727,0.1081,consistent
+qm7,ce,0.038,0.0389,5/5,-0.34,-0.0047,0.003,consistent

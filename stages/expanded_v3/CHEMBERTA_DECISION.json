@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-04T16:06:11.269519+00:00",
+  "scope": "three full fine-tunes on BACE; all backbone parameters trainable",
+  "seeds": [
+    0,
+    100,
+    200
+  ],
+  "basis": "pilot runtime and memory only",
+  "pilot": {
+    "parameters": 3427825,
+    "epoch_seconds": [
+      16.197804489172995,
+      16.02887905901298
+    ],
+    "estimated_max_seconds_three_seeds": 9718.682693503797,
+    "peak_rss_mib": 680.42578125,
+    "train_tokens": {
+      "n": 1210,
+      "max_tokens_untruncated": 129,
+      "truncated": 0
+    },
+    "valid_tokens": {
+      "n": 151,
+      "max_tokens_untruncated": 105,
+      "truncated": 0
+    },
+    "test_read": false,
+    "microbatch": 8,
+    "effective_batch": 128,
+    "representation": "source pooler_output",
+    "source_sha256": "b96970fc8497ddba37b1dc8f279ebc1832be3852c26147ef33110f8ccc3ef670"
+  },
+  "max_epochs": 200,
+  "patience_strictly_greater": 40,
+  "test_results_available": false,
+  "code_sha256": "8cff8c1efb10c30a99d9fe8ecb037969aa908fd094bcec5ed90ec14e5bb9bb0a",
+  "repair": {
+    "at_utc": "2026-10-04T20:05:59.157415+00:00",
+    "reason": "concurrent per-seed writes (job 217603) appended trailing bytes and recorded seeds [0]; protocol scope is three seeds",
+    "valid_prefix_chars": 1006,
+    "trailing_junk": "}",
+    "corrupted_copy": "CHEMBERTA_DECISION.corrupted.json",
+    "corrupted_sha256": "2c780f3aee5c82309e55cac893ce331b372d5d7bc5d5abbdb0155c6be4df1157",
+    "consistent_with": {
+      "CHEMBERTA_FROZEN.seeds": [
+        0,
+        100,
+        200
+      ],
+      "test_unopened": true
+    },
+    "decision_content_changed": false
+  }
+}

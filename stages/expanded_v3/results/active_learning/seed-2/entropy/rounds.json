@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10200,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 1.1729004599364385,
+    "epochs": 141,
+    "best_epoch": 90,
+    "train_seconds": 0.008704484906047583,
+    "select_seconds": 0.0038076858036220074
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10201,
+    "validation_auc": 0.6846153846153846,
+    "validation_nll": 2.2822121477109176,
+    "epochs": 243,
+    "best_epoch": 192,
+    "train_seconds": 2.4386032349430025,
+    "select_seconds": 0.003974461928009987
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10202,
+    "validation_auc": 0.6772893772893773,
+    "validation_nll": 1.2587929454676923,
+    "epochs": 159,
+    "best_epoch": 108,
+    "train_seconds": 1.8197665349580348,
+    "select_seconds": 0.003974566236138344
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10203,
+    "validation_auc": 0.6794871794871795,
+    "validation_nll": 0.9764822945597633,
+    "epochs": 143,
+    "best_epoch": 92,
+    "train_seconds": 1.3208317668177187,
+    "select_seconds": 0.00374549999833107
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10204,
+    "validation_auc": 0.7007326007326007,
+    "validation_nll": 0.8705282456194458,
+    "epochs": 135,
+    "best_epoch": 84,
+    "train_seconds": 1.1342178918421268,
+    "select_seconds": 0.0044907392002642155
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10205,
+    "validation_auc": 0.6835164835164835,
+    "validation_nll": 1.0589012177819508,
+    "epochs": 147,
+    "best_epoch": 96,
+    "train_seconds": 1.8595658312551677,
+    "select_seconds": 0.003996721003204584
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10206,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 0.9688235746512525,
+    "epochs": 134,
+    "best_epoch": 83,
+    "train_seconds": 1.6293252548202872
+  }
+]

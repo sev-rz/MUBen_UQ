@@ -1,0 +1,9 @@
+dataset,metric,authors_trainer,ours,abs_diff,max_seed_sd,ratio,consistent_lt_2sd
+esol,rmse,1.1499,1.0899,0.0599,0.0139,4.32,False
+esol,mae,0.8646,0.8405,0.0241,0.0221,1.09,True
+esol,nll,0.7643,1.0333,0.269,0.0537,5.01,False
+esol,ce,0.0301,0.0383,0.0082,0.0009,8.79,False
+qm7,rmse,116.9313,115.3697,1.5616,0.8322,1.88,True
+qm7,mae,72.7162,72.2083,0.5079,1.391,0.37,True
+qm7,nll,5.1047,5.3071,0.2023,0.0954,2.12,False
+qm7,ce,0.0144,0.0166,0.0023,0.0022,1.03,True

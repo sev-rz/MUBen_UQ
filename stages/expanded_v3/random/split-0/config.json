@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    "bace",
+    "bbbp",
+    "esol"
+  ],
+  "groups": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  ],
+  "lambda_grid": [
+    0.0,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "alpha_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "epochs": 400,
+  "patience_stop_strictly_greater": 50,
+  "mc_samples": 30,
+  "swag_epochs": 20,
+  "fingerprints": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false
+  },
+  "primary_architecture": "8x128 GELU",
+  "sensitivity_architecture": "9x128 ReLU",
+  "novel_subgroup_similarity_less_than": 0.4,
+  "split_seed": 0,
+  "adapter_sha256": "a84a807f821b303521f1f8fdceace759e521f200c9fd9e718e02f2e83915a627"
+}

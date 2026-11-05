@@ -1,0 +1,47 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 65,
+    "rmse": 2.4014794307206464,
+    "mae": 1.8724563136619448,
+    "nll": 1.4085313043105805,
+    "ce": 0.02015771635594361,
+    "ce_paired": 0.0014808470881345374,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 65,
+    "rmse": 2.2323133844984104,
+    "mae": 1.786439820384468,
+    "nll": 1.2319592071563037,
+    "ce": 0.024126408296923117,
+    "ce_paired": 0.01211927748364995,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 65,
+    "rmse": 2.6970350473004503,
+    "mae": 2.139572575756461,
+    "nll": 1.4410895075523444,
+    "ce": 0.030736020594885553,
+    "ce_paired": 0.040633758953597006,
+    "tasks_scored": 1
+  }
+]

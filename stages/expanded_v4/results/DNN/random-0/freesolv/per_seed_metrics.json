@@ -1,0 +1,80 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 1.2248002947401535,
+    "mae": 0.9594120348634201,
+    "nll": 0.7581303926169451,
+    "ce": 0.028446831988412625,
+    "ce_paired": 0.00666303332295235,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 1.2337226009609188,
+    "mae": 0.9620447708470826,
+    "nll": 0.7661444817579187,
+    "ce": 0.02821203555087081,
+    "ce_paired": 0.006420118343195264,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "SWAG",
+    "seed": 0,
+    "rmse": 1.2242321739990398,
+    "mae": 0.8997678091018076,
+    "nll": 0.6920842295997681,
+    "ce": 0.032140214388778225,
+    "ce_paired": 0.006096231703519152,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "BBP",
+    "seed": 0,
+    "rmse": 1.597851787020184,
+    "mae": 1.1217939001851802,
+    "nll": 1.246274585591952,
+    "ce": 0.0058429838996496885,
+    "ce_paired": 0.01821706633447524,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "SGLD",
+    "seed": 0,
+    "rmse": 1.5221925875445854,
+    "mae": 1.0669330932960732,
+    "nll": 1.0754713417060418,
+    "ce": 0.011211783090301648,
+    "ce_paired": 0.015694487698536274,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "Ensembles",
+    "seed": 0,
+    "rmse": 1.0630890255618342,
+    "mae": 0.7744818093433695,
+    "nll": 0.6462202868902681,
+    "ce": 0.031656075362244074,
+    "ce_paired": 0.008730924945499843,
+    "tasks_scored": 1
+  }
+]

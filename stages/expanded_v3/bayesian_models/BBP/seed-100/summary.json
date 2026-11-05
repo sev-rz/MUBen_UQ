@@ -1,0 +1,11 @@
+{
+  "kind": "BBP",
+  "seed": 100,
+  "epochs": 195,
+  "best_epoch": 144,
+  "target_mean": -2.866875829922651,
+  "target_std": 2.066724108132477,
+  "training_and_sampling_seconds": 4.298687163274735,
+  "reload_verified": true,
+  "source_sha256": "72545baf052a0e783e8157ef99a0d3e27727aebe2f5ff287fbf7c2ec7906d6cc"
+}

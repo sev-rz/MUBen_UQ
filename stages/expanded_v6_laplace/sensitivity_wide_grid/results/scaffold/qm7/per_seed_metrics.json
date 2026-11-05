@@ -1,0 +1,47 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 681,
+    "rmse": 129.40741430747298,
+    "mae": 86.91556097979125,
+    "nll": 5.36982530871346,
+    "ce": 0.014253773391889248,
+    "ce_paired": 0.012685115484280193,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 681,
+    "rmse": 127.46586132135121,
+    "mae": 85.424122890627,
+    "nll": 5.431755740421965,
+    "ce": 0.012754363581551152,
+    "ce_paired": 0.011370849594828739,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 681,
+    "rmse": 125.08817877935863,
+    "mae": 83.1696722434807,
+    "nll": 5.518886796845124,
+    "ce": 0.016924915583746376,
+    "ce_paired": 0.008929017884552382,
+    "tasks_scored": 1
+  }
+]

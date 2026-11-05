@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10400,
+    "validation_auc": 0.6282051282051282,
+    "validation_nll": 1.091162042607717,
+    "epochs": 127,
+    "best_epoch": 76,
+    "train_seconds": 0.008056825026869774,
+    "select_seconds": 0.0059940931387245655
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10401,
+    "validation_auc": 0.6076923076923076,
+    "validation_nll": 0.6869069882045559,
+    "epochs": 52,
+    "best_epoch": 1,
+    "train_seconds": 0.38971260376274586,
+    "select_seconds": 0.005609842948615551
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10402,
+    "validation_auc": 0.6358974358974359,
+    "validation_nll": 0.8787701341703736,
+    "epochs": 120,
+    "best_epoch": 69,
+    "train_seconds": 1.228521998040378,
+    "select_seconds": 0.0055936649441719055
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10403,
+    "validation_auc": 0.6443223443223444,
+    "validation_nll": 0.9608246272024861,
+    "epochs": 152,
+    "best_epoch": 101,
+    "train_seconds": 1.6051318692043424,
+    "select_seconds": 0.0048528797924518585
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10404,
+    "validation_auc": 0.5835164835164836,
+    "validation_nll": 0.9750721061249229,
+    "epochs": 125,
+    "best_epoch": 74,
+    "train_seconds": 1.1918090716935694,
+    "select_seconds": 0.005546992179006338
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10405,
+    "validation_auc": 0.6315018315018316,
+    "validation_nll": 0.9847942570311519,
+    "epochs": 123,
+    "best_epoch": 72,
+    "train_seconds": 1.3844449850730598,
+    "select_seconds": 0.005085434764623642
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10406,
+    "validation_auc": 0.6131868131868132,
+    "validation_nll": 1.1636510190892368,
+    "epochs": 158,
+    "best_epoch": 107,
+    "train_seconds": 1.7799086649902165
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 0.8463562903496614,
+    "mae": 0.6715058937907449,
+    "nll": 0.6726645535748987,
+    "ce": 0.04862758537444384,
+    "ce_paired": 0.008890260540536087,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 0.8374475836877865,
+    "mae": 0.6613898031343969,
+    "nll": 0.6002701250849709,
+    "ce": 0.04779075154572323,
+    "ce_paired": 0.007606724344732929,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Deterministic",
+    "seed": 1,
+    "rmse": 0.8127026367602488,
+    "mae": 0.6435702632498849,
+    "nll": 0.7197705326403109,
+    "ce": 0.04938914094672806,
+    "ce_paired": 0.00902751730135897,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "MC dropout",
+    "seed": 1,
+    "rmse": 0.812087733568457,
+    "mae": 0.6429699661889601,
+    "nll": 0.6660746524454665,
+    "ce": 0.04866100562839401,
+    "ce_paired": 0.00847313188602331,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Deterministic",
+    "seed": 2,
+    "rmse": 0.8612909083411744,
+    "mae": 0.6676474574622424,
+    "nll": 0.8715539917595302,
+    "ce": 0.05013878548196158,
+    "ce_paired": 0.010088474966097993,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "MC dropout",
+    "seed": 2,
+    "rmse": 0.8531333283443625,
+    "mae": 0.660379660718553,
+    "nll": 0.787107118651058,
+    "ce": 0.04949226542283787,
+    "ce_paired": 0.009749248797457657,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Ensembles",
+    "seed": "pooled",
+    "rmse": 0.8203169295662402,
+    "mae": 0.6490028261358662,
+    "nll": 0.6385731150336422,
+    "ce": 0.04891649035547473,
+    "ce_paired": 0.008656140900453815,
+    "tasks_scored": 1
+  }
+]

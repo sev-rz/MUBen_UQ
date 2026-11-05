@@ -1,0 +1,85 @@
+{
+ "DNN": {
+  "measured": {
+   "unit": "scaffold tox21 det seeds 0,100 (+temperature, SWAG)",
+   "epochs": [
+    107,
+    138
+   ],
+   "seconds": [
+    12.9,
+    16.6
+   ],
+   "seconds_per_row_epoch_1thread": 1.9210018051324298e-05,
+   "swag_seconds": 2.3249757529702038
+  },
+  "units_total": 288,
+  "n_train": {
+   "bace": 1210,
+   "bbbp": 1631,
+   "clintox": 1182,
+   "tox21": 6264,
+   "esol": 902,
+   "freesolv": 513,
+   "lipo": 3360,
+   "qm7": 5464
+  },
+  "projected_cpu_hours_typical": 0.4745623649381103,
+  "projected_cpu_hours_worst_case": 1.6301006597776158,
+  "plan": "one ws-ia job, 22 one-thread worker processes sharing a claim queue",
+  "projected_wall_hours_worst_case_22_procs": 0.07409548453534617
+ },
+ "ChemBERTa": {
+  "source": "production units finished so far (GPU, .venv-gpu, 2 processes per GPU); replaces the invalid CPU pilot",
+  "finished_fits_used": 48,
+  "datasets_measured": [
+   "bace",
+   "bbbp",
+   "clintox",
+   "tox21"
+  ],
+  "seconds_per_train_row_epoch_by_dataset": {
+   "bace": 0.0005850482793561857,
+   "bbbp": 0.0006146190882580978,
+   "clintox": 0.0012445214223340388,
+   "tox21": 0.0006558803342346382
+  },
+  "seconds_per_train_row_epoch_mean": 0.0007750172810457401,
+  "typical_epochs": 105.58333333333333,
+  "n_train": {
+   "bace": 1210,
+   "bbbp": 1631,
+   "clintox": 1182,
+   "tox21": 6264,
+   "esol": 902,
+   "freesolv": 513,
+   "lipo": 3360,
+   "qm7": 5464
+  },
+  "benchmark": {
+   "job": 223265,
+   "dataset": "tox21",
+   "seconds_per_epoch_1_process": 2.25,
+   "seconds_per_epoch_6_processes_per_gpu": 10.65,
+   "note": "3-6 processes per GPU add only ~10-30% throughput"
+  },
+  "gpu_hours_typical": {
+   "scaffold": 5.063696618483418,
+   "random": 4.360559651431269
+  },
+  "gpu_hours_worst_case": {
+   "scaffold": 8.944264414586883,
+   "random": 7.642163345716726
+  },
+  "units": {
+   "scaffold": 156,
+   "random": 132
+  },
+  "gate": "launch if projected total <= 4 GPU-days (96 GPU-hours), else stop and report options",
+  "gpu_days_typical_total": 0.3926773445797786,
+  "gpu_days_worst_total": 0.6911011566793169,
+  "gate_passed": true,
+  "wall_hours_typical_on_2_gpus": 4.712128134957343,
+  "wall_hours_worst_on_2_gpus": 8.293213880151804
+ }
+}

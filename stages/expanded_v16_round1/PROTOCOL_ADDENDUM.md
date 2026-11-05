@@ -1,0 +1,2 @@
+# Addendum to PROTOCOL.md (written before any C2 computation)
+C2 density-ratio probabilities are CROSS-FITTED: 5-fold stratified cross-validation (fixed shuffle seed 0) over the pooled validation and test molecules of a dataset; each molecule's probability comes from the model not trained on it. Reason: in-sample probabilities of an L2 logistic regression on 1024 bits separate the two sets perfectly and collapse to the clip bounds (0.05, 0.95), which makes every set the full label set. All other C2 details unchanged.

@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10100,
+    "validation_auc": 0.6531135531135532,
+    "validation_nll": 1.6840315633897158,
+    "epochs": 165,
+    "best_epoch": 114,
+    "train_seconds": 0.008447745349258184,
+    "select_seconds": 0.00574908684939146
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10101,
+    "validation_auc": 0.7153846153846154,
+    "validation_nll": 1.3848167800550115,
+    "epochs": 175,
+    "best_epoch": 124,
+    "train_seconds": 1.7206332138739526,
+    "select_seconds": 0.0059127770364284515
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10102,
+    "validation_auc": 0.7424908424908425,
+    "validation_nll": 1.5266801339109473,
+    "epochs": 165,
+    "best_epoch": 114,
+    "train_seconds": 1.6360673531889915,
+    "select_seconds": 0.006049062591046095
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10103,
+    "validation_auc": 0.7051282051282052,
+    "validation_nll": 2.1439548298537123,
+    "epochs": 186,
+    "best_epoch": 135,
+    "train_seconds": 1.9866313668899238,
+    "select_seconds": 0.0058382852002978325
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10104,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 0.6886696885935395,
+    "epochs": 52,
+    "best_epoch": 1,
+    "train_seconds": 0.5275507639162242,
+    "select_seconds": 0.005969148129224777
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10105,
+    "validation_auc": 0.6644688644688644,
+    "validation_nll": 1.5598271275767808,
+    "epochs": 187,
+    "best_epoch": 136,
+    "train_seconds": 2.246203199028969,
+    "select_seconds": 0.006286186631768942
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10106,
+    "validation_auc": 0.6611721611721613,
+    "validation_nll": 1.4963552962092042,
+    "epochs": 177,
+    "best_epoch": 126,
+    "train_seconds": 2.0095376558601856
+  }
+]

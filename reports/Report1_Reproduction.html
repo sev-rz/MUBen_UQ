@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Reproducing MUBen: how reliable are the uncertainty estimates of molecular property models?</title><link rel="stylesheet" href="katex/katex.min.css"><style>
+@page { size: A4; margin: 22mm 22mm 22mm 22mm; }
+* { box-sizing: border-box; }
+body { font-family: 'STIX Two Text', 'Latin Modern Roman', 'Times New Roman', serif; font-size: 10.6pt; line-height: 1.36; color: #000; text-align: justify; hyphens: auto; }
+h1 { font-size: 19pt; font-weight: 400; text-align: center; line-height: 1.2; margin: 14pt 0 10pt 0; color: #000; }
+.sub { text-align: center; font-size: 11.5pt; margin-bottom: 8pt; font-style: italic; }
+.meta { text-align: center; font-size: 10pt; margin-bottom: 14pt; color: #000; }
+h2 { font-size: 13.5pt; font-weight: 700; margin: 17pt 0 6pt 0; color: #000; page-break-after: avoid; text-align: left; }
+h3 { font-size: 11.2pt; font-weight: 700; margin: 11pt 0 3pt 0; color: #000; page-break-after: avoid; text-align: left; }
+p { margin: 0 0 6pt 0; } ul, ol { margin: 0 0 6pt 0; padding-left: 18pt; } li { margin-bottom: 2.5pt; }
+.box { border: none; border-top: 0.6pt solid #000; border-bottom: 0.6pt solid #000; background: none; padding: 4pt 0; margin: 6pt 0 10pt 0; border-radius: 0; }
+.box h3 { margin-top: 2pt; } .warn { background: none; }
+.contents { margin: 4pt 0 14pt 0; text-align: left; font-size: 10.4pt; } .contents .ct { font-weight: 700; font-size: 12pt; margin-bottom: 3pt; } .contents div { margin: 1.5pt 0; }
+.toc { columns: 2; column-gap: 24pt; font-size: 9.6pt; text-align: left; } .toc div { margin: 1pt 0; } .toc .s { margin-left: 12pt; }
+table { border-collapse: collapse; width: auto; min-width: 62%; margin: 2pt auto 4pt auto; font-size: 9.3pt; border-top: 1.2pt solid #000; border-bottom: 1.2pt solid #000; text-align: left; }
+table.wide { width: 100%; } table, .tcap, th, td { hyphens: none; } .tw { page-break-inside: avoid; break-inside: avoid; } .tw.long { page-break-inside: auto; break-inside: auto; }
+th { background: none; color: #000; font-weight: 400; text-align: left; padding: 3pt 7pt; border-bottom: 0.6pt solid #000; vertical-align: bottom; }
+td { padding: 1.8pt 7pt; border: none; vertical-align: top; } tr:nth-child(even) td { background: none; }
+tr { page-break-inside: avoid; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; } td.c, th.c { text-align: center; }
+tr.mid td { border-top: 0.6pt solid #000; }
+.cap { font-size: 9.4pt; margin: 3pt 8pt 11pt 8pt; text-align: justify; page-break-inside: avoid; } .cap b { font-weight: 700; color: #000; } .cap i { font-style: italic; }
+.tcap { font-size: 9.4pt; margin: 8pt 8pt 3pt 8pt; text-align: justify; page-break-after: avoid; } .tcap b { font-weight: 700; }
+figure { margin: 8pt 0 4pt 0; text-align: center; page-break-inside: avoid; } figure img { width: 80%; height: auto; } figure.w img { width: 92%; }
+.small { font-size: 9.2pt; }
+.pill { display: inline; padding: 0; border-radius: 0; font-size: inherit; color: #000; font-style: italic; } .pill.ok { color: #1B7F8E; } .pill.bad { color: #C9622B; } .pill.mid { color: #14283C; }
+code { font-family: Menlo, Consolas, monospace; font-size: 8.8pt; background: none; padding: 0; }
+.pb { page-break-before: always; } .katex { font-size: 1.04em; } .katex-display { margin: 5pt 0 6pt 0; page-break-inside: avoid; }
+.verdict { border-left: 2.5pt solid #14283C; background: none; padding: 1pt 0 1pt 9pt; margin: 6pt 0 10pt 0; page-break-inside: avoid; text-align: left; }
+.verdict.ok { border-color: #1B7F8E; } .verdict.no { border-color: #C9622B; } .verdict.mid { border-color: #A9B0B6; }
+.hyp { border-left: 2.5pt solid #9CCBD2; background: none; border-radius: 0; border-top: none; border-right: none; border-bottom: none; padding: 1pt 0 1pt 9pt; margin: 4pt 0 7pt 0; page-break-inside: avoid; text-align: left; }
+.hyp b.k { color: #000; font-style: italic; }
+</style><script src="katex/katex.min.js"></script><script src="katex/auto-render.min.js"></script></head><body><h1>Reproducing MUBen: how reliable are the uncertainty estimates of molecular property models?</h1><div class="sub">Technical report 1 of 2: reproduction of the selected paper</div><div class="contents"><div class="ct">Contents</div><div>Goals</div><div>Summary</div><div>1. The selected paper</div><div>2. What was reproduced and how</div><div>3. H1: the published tables reproduce within seed noise</div><div>4. H2: our pipeline is interchangeable with the authors&rsquo; trainers</div><div>5. H3: the paper&rsquo;s conclusions hold on the reproduced numbers</div><div>6. Discussion</div><div>7. Limitations</div><div>8. Conclusion</div><div>9. Implementation and how to reproduce</div></div><div class="box"><h3>Goals</h3>
+<p>This report reproduces <b>MUBen: Benchmarking the Uncertainty of Molecular Representation Models</b> (Li et al., arXiv 2306.10060v4). MUBen asks how reliable the uncertainty estimates of molecular property models are. Our goals:</p>
+<ol><li>Reproduce the published tables for four molecular models (descriptor DNN, ChemBERTa, GIN, Uni-Mol) on eight datasets, with the authors&rsquo; scaffold splits and with random splits.</li>
+<li>For every gap between our numbers and the published ones, decide whether it comes from our implementation, from an unreported setting, or from the published run, by running the authors&rsquo; own code.</li>
+<li>Check the paper&rsquo;s conclusions on the reproduced numbers.</li>
+<li>Document the paper&rsquo;s contributions and limitations, and everything needed to repeat the work.</li></ol>
+<p>Report 2 builds on the networks reproduced here and tests two uncertainty methods that MUBen does not contain.</p></div>
+<div class="box"><h3>Summary</h3>
+<ul>
+<li><b>The published tables reproduce partly.</b> Of 1,072 rows (DNN and ChemBERTa, both split types) 53.5 % agree within one published standard deviation and 77.2 % within two; GIN 36.4 % and 70.3 %; Uni-Mol 52.0 % and 75.8 %. Published SDs come from three seeds; a perfect copy would match only about 60 % within one SD, so the agreement is closer to its ceiling than the raw counts suggest. The largest gaps are regression NLL and calibration error, ChemBERTa on scaffold splits, and the DNN on QM7.</li>
+<li><b>Our pipeline is interchangeable with the authors&rsquo; trainers, but two published numbers remain unexplained.</b> We ran the authors&rsquo; unmodified trainers next to our pipeline. They agree wherever the settings are matched: Uni-Mol (13 of 13 comparisons), GIN regression (16 of 16), ChemBERTa ESOL (NLL 1.037 against 1.033, both with the constant learning rate that is the code default) and the DNN on QM7 (NLL 5.47 against 5.48). Two gaps traced to the <b>learning-rate schedule</b>: for GIN the paper states a constant rate but the released code defaults to a linear one, and our GIN agrees on 20 of 20 classification comparisons only once it uses that linear schedule; for ChemBERTa the paper states no schedule and the choice moves ESOL NLL by about 0.27. Two published numbers are not reproduced by the authors&rsquo; own code under any setting we tried: DNN QM7 NLL (10.30) and ChemBERTa ESOL NLL (2.28); their cause cannot be determined from the released tables.</li>
+<li><b>Two of the paper&rsquo;s explanatory claims are not supported</b> (larger models are worse calibrated; the choice of uncertainty method matters more for larger models), while the direction of most method-level claims reproduces.</li>
+<li><b>Main lesson.</b> An unreported training setting can move calibration metrics as much as a change of method, so reproduction of uncertainty benchmarks needs the schedule, seeds and aggregation rules, not only the architecture.</li>
+</ul></div>
+<h2>1. The selected paper</h2>
+<h3>1.1 What it does</h3>
+<p>Machine-learning models predict molecular properties (solubility, toxicity, binding) to decide which compounds to make and test. A prediction is only as useful as the statement of how reliable it is, and the realistic case is a <b>new chemical series</b> unlike the training data. MUBen is a benchmark for exactly this. It combines six molecular models (a descriptor network, the pre-trained language model ChemBERTa, the pre-trained graph model GROVER, a graph isomorphism network GIN, the 3D model Uni-Mol, and TorchMD-NET) with eight uncertainty quantification (UQ) methods (the plain network, temperature scaling, focal loss, MC dropout, SWAG, Bayes by backprop, SGLD, deep ensembles) on molecular classification and regression datasets, with scaffold and random splits, and reports accuracy and calibration (ROC-AUC, ECE, NLL, Brier; RMSE, MAE, NLL, calibration error) as mean and SD over three seeds.</p>
+<h3>1.2 Contributions</h3>
+<ul><li>The first systematic comparison of UQ methods across several molecular representations on common data, with released code and result tables.</li>
+<li>Method-level conclusions (for example that deep ensembles are usually the most accurate, that MC dropout and temperature scaling lower NLL, and that BBP and SGLD do not improve accuracy) and a strong dependence of results on the split, with scaffold splits harder than random ones; both are checked in Section 5.</li>
+<li>Two explanatory claims about model size and method choice, also tested in Section 5.</li></ul>
+<h3>1.3 Limitations (our assessment, with the evidence found in this study)</h3>
+<ul><li><b>Aggregated outputs only.</b> The repository releases means and SDs per method, not predictions, checkpoints or logs, so a published number that looks wrong cannot be inspected (Sections 3 and 4).</li>
+<li><b>Under-reported settings.</b> The learning-rate schedule is not stated for ChemBERTa, and for GIN the paper states a constant rate while the released code defaults to a linear schedule; the schedule changes calibration metrics substantially (Section 4).</li>
+<li><b>Three seeds.</b> SDs from three seeds are noisy and often tiny, which makes agreement tests fragile.</li>
+<li><b>No distribution-shift guarantees and no trivial baselines.</b> The benchmark does not test methods with coverage guarantees, and does not compare against a one-parameter recalibration (Report 2).</li>
+<li><b>Fixed scaffold splits.</b> One scaffold split per dataset: split variance is not measured.</li></ul>
+<h2>2. What was reproduced and how</h2>
+<div class="tw">
+<div class="tcap"><b>Table 1:</b> Terms and metrics used in both reports.</div>
+<table class="wide">
+<colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+<thead><tr><th class="">Term</th><th class="">Meaning in this report</th></tr></thead><tbody>
+<tr class=""><td class="">Scaffold split</td><td class="">test molecules have a core ring structure (Bemis&ndash;Murcko scaffold) that is absent from the training set; it imitates a new chemical series. A random split puts close analogues in training and test</td></tr>
+<tr class=""><td class="">NLL</td><td class="">negative log-likelihood of the observed value under the predicted distribution (Gaussian for regression, Bernoulli for classification); lower is better and it penalises both wrong and over- or under-confident predictions</td></tr>
+<tr class=""><td class="">ECE / CE</td><td class="">calibration error: for classification (ECE) the gap between predicted probability and observed frequency, binned; for regression (CE) the gap between nominal and observed coverage of predicted intervals</td></tr>
+<tr class=""><td class="">ROC-AUC, Brier, RMSE, MAE</td><td class="">ranking quality (ROC-AUC), mean squared probability error (Brier), root and absolute mean error of the predicted value (RMSE, MAE)</td></tr>
+<tr class=""><td class="">Published SD, z, d</td><td class="">SD over the authors&rsquo; three seeds; $z=(\bar x_{\text{ours}}-\bar x_{\text{pub}})/\mathrm{SD}_{\text{pub}}$; $d$ = difference of means divided by the pooled seed SD, used when both sides have several seeds</td></tr>
+</tbody></table></div>
+<div class="tw">
+<table class="wide">
+<colgroup><col style="width:16%"><col style="width:84%"></colgroup>
+<thead><tr><th class="">Item</th><th class="">Setting</th></tr></thead><tbody>
+<tr class=""><td class="">Models</td><td class="">DNN on 200 normalised RDKit descriptors (8 linear 128-wide GELU layers, dropout 0.1); ChemBERTa-77M-MLM (3.4 M parameters); GIN (authors&rsquo; encoder, 5 layers, 128 hidden units, 0.26 M parameters); Uni-Mol (authors&rsquo; encoder, 47.6 M parameters, 11 conformers per molecule). GROVER (checkpoint link unreachable) and TorchMD-NET were not run</td></tr>
+<tr class=""><td class="">Datasets</td><td class="">Classification: BACE, BBBP, ClinTox (2 tasks), Tox21 (12 tasks, missing labels). Regression: ESOL, FreeSolv, Lipo, QM7</td></tr>
+<tr class=""><td class="">Splits</td><td class="">Scaffold: the authors&rsquo; files (the &ldquo;unseen drug&rdquo; case). Random: three splits from the authors&rsquo; algorithm (two successive train_test_split calls, random_state 0 to 2, original sizes). Uni-Mol: scaffold only</td></tr>
+<tr class=""><td class="">UQ methods</td><td class="">Deterministic, temperature scaling and focal loss (classification only), MC dropout, SWAG, Bayes by backprop (BBP), SGLD, deep ensembles</td></tr>
+<tr class=""><td class="">Seeds</td><td class="">Scaffold: seeds 0, 100, 200 for single-model methods and one pooled 10-member ensemble (as published, no SD). Random: one seed per split, 3-member ensembles</td></tr>
+<tr class=""><td class="">Implementation</td><td class="">Our own training pipeline, which imports the authors&rsquo; SWAG, BBP and SGLD modules, GIN and Uni-Mol encoders and featurisers, and copies their metric definitions after reading their source. The authors&rsquo; own trainers are used for the bridge checks</td></tr>
+<tr class=""><td class="">Agreement rule</td><td class="">A row (method, metric, dataset) agrees at $k$ if $|\bar x_{\text{rep}}-\bar x_{\text{pub}}|\le k\cdot \mathrm{SD}_{\text{pub}}$; rows with a published SD of 0 are not counted</td></tr>
+<tr class=""><td class="">Rigor</td><td class="">Every analysis was fixed in a protocol with a hash before it was run; training units are resumable and write completion markers; test metrics are computed only behind a FROZEN marker per model, split and dataset; no setting was changed after seeing test results</td></tr>
+</tbody></table></div>
+<p>Cost: the DNN runs on CPU; ChemBERTa, GIN and Uni-Mol on one GPU in FP32 with deterministic algorithms. GIN (336 fits) took 2.7 GPU-hours; Uni-Mol took 14.4 GPU-hours for 80 Deterministic and ensemble fits and about 7 more for the remaining methods. Uni-Mol batches of 128 were realised by gradient accumulation over micro-batches of 32 where memory required it; the gradient is the same.</p>
+<h2>3. H1: the published tables reproduce within seed noise</h2>
+<div class="hyp"><b class="k">Hypothesis.</b> For every model and split, most published rows are reproduced within two published standard deviations. &ldquo;Most&rdquo; was not given a numerical threshold in advance; we therefore report the fractions and compare them with the ceiling that three-seed noise alone would allow (simulated below), and we call the hypothesis supported only if the fractions are close to that ceiling.</div>
+<div class="tw">
+<div class="tcap"><b>Table 2:</b> Agreement with the published tables (rows with a published SD). Uni-Mol: all eight UQ methods, scaffold only; not comparable with the other totals (different method set and split types). GIN has 236 countable rows because 12 ClinTox rows have a published SD of exactly 0; the published tables contain no GIN random-split rows.</div>
+<table>
+<thead><tr><th class="">Backbone</th><th class="">Split</th><th class="n">Rows</th><th class="n">Within 1 SD</th><th class="n">Within 2 SD</th></tr></thead><tbody>
+<tr class=""><td class="">DNN</td><td class="">scaffold</td><td class="n">248</td><td class="n">114 (46.0&thinsp;%)</td><td class="n">185 (74.6&thinsp;%)</td></tr>
+<tr class=""><td class="">DNN</td><td class="">random</td><td class="n">288</td><td class="n">166 (57.6&thinsp;%)</td><td class="n">227 (78.8&thinsp;%)</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">scaffold</td><td class="n">248</td><td class="n">93 (37.5&thinsp;%)</td><td class="n">162 (65.3&thinsp;%)</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">random</td><td class="n">288</td><td class="n">200 (69.4&thinsp;%)</td><td class="n">254 (88.2&thinsp;%)</td></tr>
+<tr class=""><td class="">GIN</td><td class="">scaffold</td><td class="n">236</td><td class="n">86 (36.4&thinsp;%)</td><td class="n">166 (70.3&thinsp;%)</td></tr>
+<tr class=""><td class="">Uni-Mol</td><td class="">scaffold</td><td class="n">248</td><td class="n">129 (52.0&thinsp;%)</td><td class="n">188 (75.8&thinsp;%)</td></tr>
+</tbody></table></div>
+<figure><img src="figs4/fig1_agreement.png"><div class="cap"><b>Figure 1:</b> How closely we reproduce the published MUBen tables: share of published rows (with a published SD) matched within 1 and 2 SD. <i>Why it matters:</i> about half of the rows match within one published SD and about three quarters within two; the published SDs come from only three seeds, so most misses are 1 to 3&thinsp;% in natural units.</div></figure>
+<div class="tw">
+<div class="tcap"><b>Table 3:</b> Uni-Mol agreement by UQ method (rows with a published SD; the scaffold ensemble has none).</div>
+<table>
+<thead><tr><th class="">Method</th><th class="n">Rows</th><th class="n">Within 1 SD</th><th class="n">Within 2 SD</th></tr></thead><tbody>
+<tr class=""><td class="">MC dropout</td><td class="n">40</td><td class="n">28 (70&thinsp;%)</td><td class="n">36 (90&thinsp;%)</td></tr>
+<tr class=""><td class="">Deterministic</td><td class="n">40</td><td class="n">21 (53&thinsp;%)</td><td class="n">34 (85&thinsp;%)</td></tr>
+<tr class=""><td class="">Temperature scaling</td><td class="n">24</td><td class="n">12 (50&thinsp;%)</td><td class="n">23 (96&thinsp;%)</td></tr>
+<tr class=""><td class="">Focal loss</td><td class="n">24</td><td class="n">14 (58&thinsp;%)</td><td class="n">19 (79&thinsp;%)</td></tr>
+<tr class=""><td class="">BBP</td><td class="n">40</td><td class="n">24 (60&thinsp;%)</td><td class="n">29 (73&thinsp;%)</td></tr>
+<tr class=""><td class="">SWAG</td><td class="n">40</td><td class="n">15 (38&thinsp;%)</td><td class="n">24 (60&thinsp;%)</td></tr>
+<tr class=""><td class="">SGLD</td><td class="n">40</td><td class="n">15 (38&thinsp;%)</td><td class="n">23 (58&thinsp;%)</td></tr>
+</tbody></table></div>
+<ul><li><b>The counts are a pessimistic measure.</b> Published SDs come from three seeds. In a simulation with Gaussian noise, three seeds on each side and independent rows, a <i>perfect</i> reproduction would match about 58 to 65 % of rows within one SD and 82 to 87 % within two. Our 53.5 % and 77.2 % are therefore not far from the ceiling; the real shortfalls are ChemBERTa and GIN on scaffold splits (about 37 % within one SD). In natural units the Deterministic GIN differs from the published value by a median of 2.8 % in ROC-AUC and 6.0 % in RMSE; the most extreme z-score (QM7 RMSE, z = &minus;21.7) is a 1.2 % difference against a published SD of 0.06 % of the value.</li>
+<li><b>Agreement depends on the method.</b> For Uni-Mol, MC dropout agrees best (70 % within one SD) and SWAG and SGLD least (38 %); classification metrics agree well and regression NLL and MAE less well. GIN SGLD diverges on regression for one seed in our runs, and the published GIN tables also show unstable SGLD (ESOL RMSE 3.32 &plusmn; 2.12), so this is probably not specific to our pipeline.</li>
+<li><b>Where the disagreement concentrates.</b> Regression NLL and calibration error (CE), and ChemBERTa on scaffold splits (median z for ROC-AUC &minus;2.05, for RMSE +1.74, for CE &minus;3.04). The reproduced regression NLL is often far below the published one (Table 4). The cause is not an arithmetic error: an independent recomputation of the Gaussian NLL equals the stored value for all 272 regression groups. Our learned variances are close to calibrated on random splits and overconfident on scaffold splits (90 % intervals cover 0.80 to 0.81 on scaffold, 0.88 to 0.92 on random).</li></ul>
+<div class="tw">
+<div class="tcap"><b>Table 4:</b> Deterministic regression NLL, published and reproduced.</div>
+<table class="wide">
+<thead><tr><th class="">Model</th><th class="">Dataset</th><th class="n">Scaffold: published</th><th class="n">Scaffold: ours</th><th class="n">Random: published</th><th class="n">Random: ours</th></tr></thead><tbody>
+<tr class=""><td class="">ChemBERTa</td><td class="">ESOL</td><td class="n">2.280</td><td class="n">1.033</td><td class="n">0.377</td><td class="n">0.258</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">FreeSolv</td><td class="n">1.786</td><td class="n">1.651</td><td class="n">0.827</td><td class="n">0.784</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">Lipo</td><td class="n">1.237</td><td class="n">0.544</td><td class="n">1.447</td><td class="n">0.467</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">QM7</td><td class="n">6.962</td><td class="n">5.307</td><td class="n">4.593</td><td class="n">4.594</td></tr>
+<tr class=""><td class="">DNN</td><td class="">ESOL</td><td class="n">1.003</td><td class="n">0.675</td><td class="n">0.107</td><td class="n">0.011</td></tr>
+<tr class=""><td class="">DNN</td><td class="">FreeSolv</td><td class="n">1.337</td><td class="n">1.754</td><td class="n">0.726</td><td class="n">0.814</td></tr>
+<tr class=""><td class="">DNN</td><td class="">Lipo</td><td class="n">0.615</td><td class="n">0.616</td><td class="n">0.616</td><td class="n">0.147</td></tr>
+<tr class=""><td class="">DNN</td><td class="">QM7</td><td class="n"><b>10.298</b></td><td class="n"><b>5.477</b></td><td class="n">5.523</td><td class="n">4.554</td></tr>
+</tbody></table></div>
+<div class="verdict mid"><b>Verdict: partly supported.</b> Within two published SDs, 77 % (DNN and ChemBERTa), 70 % (GIN) and 76 % (Uni-Mol) of rows are reproduced, against a noise ceiling of about 82 to 87 %. The reproduction is good for classification accuracy and for most random-split rows, and weaker for regression calibration and for ChemBERTa and GIN on scaffold splits. Section 4 examines where the gaps come from. The counts treat rows as independent, although rows of the same dataset and method are correlated, so they describe agreement and are not a significance test.</div>
+<h2>4. H2: our pipeline is interchangeable with the authors&rsquo; trainers, so the gaps come from settings or from the published run</h2>
+<div class="hyp"><b class="k">Hypothesis.</b> When the settings are matched, the authors&rsquo; unmodified trainer gives the same numbers as our pipeline; a remaining gap with the published tables then comes from an unreported setting or from the published run, not from our implementation. If instead our implementation were the cause, the two trainers would disagree. Agreement is judged by $$d=\frac{\bar x_{\text{authors}}-\bar x_{\text{ours}}}{s_{\text{pooled}}}$$ with a Welch 95&thinsp;% interval for the difference of means: consistent if $|d|<1$; different if $|d|\ge 1$ and the interval excludes 0.</div>
+<div class="tw">
+<div class="tcap"><b>Table 5:</b> Bridge checks against the authors&rsquo; own trainers (Deterministic, scaffold).</div>
+<table class="wide">
+<colgroup><col style="width:16%"><col style="width:26%"><col style="width:58%"></colgroup>
+<thead><tr><th class="">Backbone</th><th class="">Comparisons</th><th class="">Outcome</th></tr></thead><tbody>
+<tr class=""><td class="">DNN</td><td class="">ESOL, QM7 (3 seeds)</td><td class="">Authors&rsquo; code with paper settings reproduces our QM7 NLL (5.47 vs 5.48), not the published 10.30 (4.1)</td></tr>
+<tr class=""><td class="">ChemBERTa</td><td class="">ESOL, QM7 (3 seeds)</td><td class="">Agree under the same schedule (ESOL NLL 1.037 vs 1.033 constant, 0.764 vs 0.758 linear); the published ESOL NLL 2.28 is not reproduced (4.2)</td></tr>
+<tr class=""><td class="">GIN</td><td class="">all datasets (10 seeds; Tox21: 5)</td><td class="">Regression 16 of 16 consistent; classification 14 of 20, and 20 of 20 with the authors&rsquo; schedule (4.3)</td></tr>
+<tr class=""><td class="">Uni-Mol</td><td class="">ESOL, BACE (10 seeds), QM7 (5)</td><td class="">13 of 13 consistent, largest |d| 0.81 (4.4)</td></tr>
+</tbody></table></div>
+<h3>4.1 DNN: the published QM7 numbers are not reproduced by the authors&rsquo; own code</h3>
+<p>We cloned the authors&rsquo; repository at the pinned commit, built its environment from its requirements, and ran their unmodified trainer for the DNN with the settings in the paper&rsquo;s Appendix B (GELU, batch 256, learning rate 2e-4, 400 epochs, tolerance 50, 158,082 parameters), seeds 0 to 2, with their own metric functions.</p>
+<div class="tw">
+<div class="tcap"><b>Table 6:</b> DNN, scaffold, Deterministic. On QM7 the authors&rsquo; code agrees with our pipeline and not with the published row.</div>
+<table>
+<thead><tr><th class="">Dataset / metric</th><th class="n">Published (SD)</th><th class="n">Our pipeline</th><th class="n">Authors&rsquo; code, paper settings</th></tr></thead><tbody>
+<tr class=""><td class="">ESOL RMSE</td><td class="n">0.905 (0.029)</td><td class="n">0.913</td><td class="n">0.906</td></tr>
+<tr class=""><td class="">ESOL NLL</td><td class="n">1.003 (0.377)</td><td class="n">0.675</td><td class="n">0.761</td></tr>
+<tr class=""><td class="">ESOL CE</td><td class="n">0.0465 (0.0052)</td><td class="n">0.0465</td><td class="n">0.0475</td></tr>
+<tr class=""><td class="">QM7 RMSE</td><td class="n">142.9 (2.9)</td><td class="n">127.3</td><td class="n"><b>126.9</b></td></tr>
+<tr class=""><td class="">QM7 MAE</td><td class="n">95.7 (3.3)</td><td class="n">85.2</td><td class="n">84.2</td></tr>
+<tr class=""><td class="">QM7 NLL</td><td class="n">10.30 (1.08)</td><td class="n">5.48</td><td class="n"><b>5.47</b></td></tr>
+<tr class=""><td class="">QM7 CE</td><td class="n">0.0393 (0.0036)</td><td class="n">0.0152</td><td class="n">0.0167</td></tr>
+</tbody></table></div>
+<ul><li>The difference between our QM7 numbers and the published ones therefore lies in the published run (a different setting, version or run; the released tables do not allow more). A Gaussian with constant standard deviation reaching NLL 10.3 would need $\sigma\approx 39$ against an RMSE of 143, whereas calibrated variances give about 5.5, which is what both implementations obtain; the published QM7 NLL is 5.25 for GIN and 4.62 for Uni-Mol, so the DNN value stands out.</li>
+<li><b>Architecture.</b> The paper lists 0.158 M parameters for the DNN, i.e. nine linear 128-wide layers; our network had eight (0.142 M). Depth made no measurable difference on ESOL or QM7. The one remaining paper/code difference is the activation (paper: GELU; code default: ReLU).</li>
+<li><b>Descriptor versions.</b> Recomputing the 200 descriptors in the authors&rsquo; environment (RDKit 2023.09 against our 2024.09) gives identical values on six of eight datasets; eight Tox21 SMILES (0.1 %) do not parse in the newer RDKit and get zero descriptors. Immaterial.</li></ul>
+<figure><img src="figs4/fig3_qm7.png"><div class="cap"><b>Figure 2:</b> The authors&rsquo; own code does not reproduce the published QM7 numbers (DNN, scaffold, Deterministic; published SD as whiskers). With the paper&rsquo;s settings their unmodified trainer reproduces our results (RMSE 126.9 vs 127.3, NLL 5.47 vs 5.48) and not the published ones (142.9 and 10.30). <i>Why it matters:</i> a reproduction gap is not always a reproduction failure; here the difference lies in the published run.</div></figure>
+<h3>4.2 ChemBERTa: the schedule moves the result, and the pipelines agree under either schedule</h3>
+<p>The paper states no learning-rate schedule for ChemBERTa, and the authors&rsquo; code default is a constant rate, which our pipeline also uses. Our first comparison launched the authors&rsquo; trainer with a linear schedule (10 % warm-up), a setting we chose and not the code default, and it gave ESOL NLL 0.764 against our 1.033. We therefore ran both pipelines under both schedules (three seeds each). Under the same schedule the pipelines agree (constant 1.037 against 1.033; linear 0.764 against 0.758), so the difference was the schedule we had passed to the authors&rsquo; trainer, not our implementation. Which schedule the authors used is unknown; neither reproduces the published ESOL NLL of 2.28.</p>
+<div class="tw">
+<div class="tcap"><b>Table 7:</b> ChemBERTa, scaffold, Deterministic (mean &plusmn; SD over three seeds). Under the same schedule the two pipelines agree; the schedule moves ESOL NLL by about 0.27 and QM7 NLL by about 0.2. Neither schedule reaches the published ESOL NLL of 2.28.</div>
+<table>
+<thead><tr><th class="">Dataset</th><th class="">Arm</th><th class="n">RMSE</th><th class="n">NLL</th><th class="n">CE</th></tr></thead><tbody>
+<tr class=""><td class="">ESOL</td><td class="">authors&rsquo; trainer, linear schedule</td><td class="n">1.150 &plusmn; 0.012</td><td class="n"><b>0.764</b> &plusmn; 0.054</td><td class="n">0.0301</td></tr>
+<tr class=""><td class="">ESOL</td><td class="">authors&rsquo; trainer, constant schedule</td><td class="n">1.084 &plusmn; 0.013</td><td class="n"><b>1.037</b> &plusmn; 0.082</td><td class="n">0.0385</td></tr>
+<tr class=""><td class="">ESOL</td><td class="">our pipeline, constant schedule</td><td class="n">1.090 &plusmn; 0.014</td><td class="n"><b>1.033</b> &plusmn; 0.027</td><td class="n">0.0383</td></tr>
+<tr class=""><td class="">ESOL</td><td class="">our pipeline, linear schedule</td><td class="n">1.147 &plusmn; 0.046</td><td class="n"><b>0.758</b> &plusmn; 0.051</td><td class="n">0.0308</td></tr>
+<tr class=""><td class="">ESOL</td><td class="">our pipeline, PyTorch-default head initialisation (constant)</td><td class="n">1.066 &plusmn; 0.001</td><td class="n">0.985 &plusmn; 0.060</td><td class="n">0.0413</td></tr>
+<tr class=""><td class="">QM7</td><td class="">authors&rsquo; trainer, linear / constant</td><td class="n">116.9 / 116.4</td><td class="n">5.105 / 5.183</td><td class="n">0.0144 / 0.0157</td></tr>
+<tr class=""><td class="">QM7</td><td class="">our pipeline, constant / linear</td><td class="n">115.4 / 116.8</td><td class="n">5.307 / 5.101</td><td class="n">0.0166 / 0.0144</td></tr>
+</tbody></table></div>
+<figure><img src="figs4/fig2_schedule_gap.png"><div class="cap"><b>Figure 3:</b> A gap that was a setting, not a bug: ChemBERTa, ESOL, scaffold, test NLL (mean &plusmn; SD, 3 seeds). Orange = linear schedule with 10&thinsp;% warm-up, teal = constant schedule (code default). <i>Why it matters:</i> the authors&rsquo; trainer and ours disagree only when they use different schedules; an unreported setting can look like a reproduction failure or a method effect.</div></figure>
+<h3>4.3 GIN: regression agrees; the classification gap was the same schedule effect</h3>
+<p>With ten seeds our GIN matches the authors&rsquo; trainer on all 16 regression comparisons (RMSE, MAE, NLL and CE on four datasets; an earlier three-seed ESOL miss of 2.07 SD was a seed-count artefact: the pooled SD is 0.166 with ten seeds and 0.068 with three). On classification, 14 of 20 comparisons were consistent and five differed, in every case in favour of our GIN (for example BACE ECE 0.17 against 0.30, ClinTox ROC-AUC 0.69 against 0.65). Head initialisation and the model-selection metric were ruled out. The authors&rsquo; GIN code sets a <b>linear learning-rate schedule by default</b> (the paper states a constant rate). Retraining our GIN with that schedule and nothing else changed makes <b>all 20 classification comparisons consistent</b>:</p>
+<div class="tw long">
+<div class="tcap"><b>Table 8:</b> GIN classification bridge, scaffold, Deterministic (ten seeds; Tox21 five). Constant schedule: 14 consistent, 5 different, 1 unclear. Linear schedule: 20 of 20 consistent. That the authors&rsquo; runs used their code default is inferred from this agreement; their launch command is not available.</div>
+<table>
+<thead><tr><th class="">Dataset</th><th class="">Metric</th><th class="n">Authors&rsquo; trainer</th><th class="">Our GIN, constant schedule</th><th class="">Our GIN, linear schedule</th></tr></thead><tbody>
+<tr class=""><td class="">BACE</td><td class="">ROC-AUC</td><td class="n">0.7333</td><td class="">0.7215 (d 0.25; consistent)</td><td class="">0.735 (d &minus;0.04; consistent)</td></tr>
+<tr class=""><td class="">BACE</td><td class="">PRC-AUC</td><td class="n">0.7231</td><td class="">0.7083 (d 0.39; consistent)</td><td class="">0.7036 (d 0.56; consistent)</td></tr>
+<tr class=""><td class="">BACE</td><td class="">ECE</td><td class="n">0.3036</td><td class="">0.1678 (d 1.23; <b>different</b>)</td><td class="">0.227 (d 0.53; consistent)</td></tr>
+<tr class=""><td class="">BACE</td><td class="">NLL</td><td class="n">1.8987</td><td class="">0.7055 (d 0.89; consistent)</td><td class="">1.1833 (d 0.47; consistent)</td></tr>
+<tr class=""><td class="">BACE</td><td class="">Brier</td><td class="n">0.3339</td><td class="">0.2371 (d 1.29; <b>different</b>)</td><td class="">0.2855 (d 0.48; consistent)</td></tr>
+<tr class=""><td class="">BBBP</td><td class="">ROC-AUC</td><td class="n">0.6182</td><td class="">0.6214 (d &minus;0.14; consistent)</td><td class="">0.6252 (d &minus;0.43; consistent)</td></tr>
+<tr class=""><td class="">BBBP</td><td class="">PRC-AUC</td><td class="n">0.6048</td><td class="">0.6148 (d &minus;0.39; consistent)</td><td class="">0.617 (d &minus;0.63; consistent)</td></tr>
+<tr class=""><td class="">BBBP</td><td class="">ECE</td><td class="n">0.2459</td><td class="">0.2407 (d 0.24; consistent)</td><td class="">0.2416 (d 0.22; consistent)</td></tr>
+<tr class=""><td class="">BBBP</td><td class="">NLL</td><td class="n">1.0733</td><td class="">1.0957 (d &minus;0.38; consistent)</td><td class="">1.0687 (d 0.15; consistent)</td></tr>
+<tr class=""><td class="">BBBP</td><td class="">Brier</td><td class="n">0.2956</td><td class="">0.2951 (d 0.05; consistent)</td><td class="">0.2951 (d 0.07; consistent)</td></tr>
+<tr class=""><td class="">ClinTox</td><td class="">ROC-AUC</td><td class="n">0.6457</td><td class="">0.6918 (d &minus;1.04; <b>different</b>)</td><td class="">0.6359 (d 0.23; consistent)</td></tr>
+<tr class=""><td class="">ClinTox</td><td class="">PRC-AUC</td><td class="n">0.5553</td><td class="">0.6014 (d &minus;1.24; <b>different</b>)</td><td class="">0.5512 (d 0.11; consistent)</td></tr>
+<tr class=""><td class="">ClinTox</td><td class="">ECE</td><td class="n">0.1813</td><td class="">0.1213 (d 0.94; consistent)</td><td class="">0.1879 (d &minus;0.08; consistent)</td></tr>
+<tr class=""><td class="">ClinTox</td><td class="">NLL</td><td class="n">0.4206</td><td class="">0.3966 (d 0.32; consistent)</td><td class="">0.4383 (d &minus;0.21; consistent)</td></tr>
+<tr class=""><td class="">ClinTox</td><td class="">Brier</td><td class="n">0.1174</td><td class="">0.0941 (d 0.84; consistent)</td><td class="">0.1217 (d &minus;0.11; consistent)</td></tr>
+<tr class=""><td class="">Tox21</td><td class="">ROC-AUC</td><td class="n">0.6789</td><td class="">0.6919 (d &minus;2.73; <b>different</b>)</td><td class="">0.6767 (d 0.57; consistent)</td></tr>
+<tr class=""><td class="">Tox21</td><td class="">PRC-AUC</td><td class="n">0.3171</td><td class="">0.3265 (d &minus;0.82; consistent)</td><td class="">0.3096 (d 0.72; consistent)</td></tr>
+<tr class=""><td class="">Tox21</td><td class="">ECE</td><td class="n">0.0718</td><td class="">0.0715 (d 0.05; consistent)</td><td class="">0.072 (d &minus;0.05; consistent)</td></tr>
+<tr class=""><td class="">Tox21</td><td class="">NLL</td><td class="n">0.3508</td><td class="">0.3568 (d &minus;1.33; <b>unclear</b>)</td><td class="">0.3504 (d 0.09; consistent)</td></tr>
+<tr class=""><td class="">Tox21</td><td class="">Brier</td><td class="n">0.0884</td><td class="">0.0876 (d 0.3; consistent)</td><td class="">0.0887 (d &minus;0.1; consistent)</td></tr>
+</tbody></table></div>
+<h3>4.4 Uni-Mol: the pipelines are interchangeable</h3>
+<p>Our Uni-Mol pipeline imports the authors&rsquo; model, dataset and collator and uses our head, loop and scoring. Against the authors&rsquo; unmodified trainer (ESOL and BACE ten seeds, QM7 five) all 13 comparisons are consistent (largest |d| 0.81): ESOL RMSE 0.851 (authors) against 0.838 (ours), BACE ROC-AUC 0.820 against 0.828, QM7 NLL 4.397 against 4.479.</p>
+<div class="verdict mid"><b>Verdict: partly supported.</b> Supported for our implementation: the pipelines agree with the authors&rsquo; trainers wherever the setting is matched (Uni-Mol, GIN regression, GIN classification and ChemBERTa once the schedule is matched). Not settled for the published numbers: the gaps to the published DNN QM7 NLL (10.30) and ChemBERTa ESOL NLL (2.28) remain, and the authors&rsquo; own code does not reproduce them either. The checks cover Deterministic networks on scaffold splits and a few datasets, with three to ten seeds, so they show consistency, not exact equivalence.</div>
+<div class="tw">
+<div class="tcap"><b>Table 9:</b> Further cases found while testing.</div>
+<table class="wide">
+<colgroup><col style="width:26%"><col style="width:74%"></colgroup>
+<thead><tr><th class="">Case</th><th class="">What we found</th></tr></thead><tbody>
+<tr class=""><td class="">Tiny published SDs</td><td class="">GIN QM7 RMSE is only 1.2&thinsp;% from the published value but 21.7 published SDs away: the published SD is 0.06&thinsp;% of the value, while our own seeds vary by 1.6&thinsp;%</td></tr>
+<tr class=""><td class="">Too few seeds</td><td class="">GIN ESOL RMSE was 2.07 SD from the authors&rsquo; trainer with 3 seeds and consistent with 10 seeds (d = &minus;0.40)</td></tr>
+<tr class=""><td class="">Published ChemBERTa ESOL NLL</td><td class="">Published 2.28; the authors&rsquo; trainer gives 0.76 (linear) or 1.04 (constant); ours 1.03 or 0.76</td></tr>
+<tr class=""><td class="">Silent failures</td><td class="">All 13 ClinTox Uni-Mol units failed with GPU out-of-memory without an alarm; one evaluation stage finished in 6 s without doing its work. Both were found by checking that outputs changed</td></tr>
+<tr class=""><td class="">Random splits</td><td class="">Verified identical to the authors&rsquo; routine on the Uni-Mol source files (all eight datasets, three seeds)</td></tr>
+</tbody></table></div>
+<h2>5. H3: the paper&rsquo;s conclusions hold on the reproduced numbers</h2>
+<div class="hyp"><b class="k">Hypothesis.</b> (a) the direction of the paper&rsquo;s method-level claims reproduces; (b) two explanatory claims hold: larger models are worse calibrated, and the choice of UQ method matters more for larger models. Each claim is counted per dataset, and support needs at least 6 of 8 datasets; the definitions were fixed before the data were read.</div>
+<div class="tw">
+<div class="tcap"><b>Table 10:</b> Method-level claims: the directions mostly reproduce; the largest changes are for GIN. For Uni-Mol: ensembles best 5 &rarr; 6 of 8, MC dropout 3 &rarr; 8, temperature 4 &rarr; 4, BBP 1 &rarr; 2, SGLD 2 &rarr; 1.</div>
+<table class="wide">
+<thead><tr><th class="">Claim (datasets where it holds, of 8 unless stated)</th><th class="">DNN scaffold</th><th class="">DNN random</th><th class="">ChemBERTa scaffold</th><th class="">ChemBERTa random</th><th class="">GIN scaffold</th></tr></thead><tbody>
+<tr class=""><td class="">Ensembles best on RMSE or ROC-AUC (published &rarr; reproduced)</td><td class="">6 &rarr; 7</td><td class="">4 &rarr; 6</td><td class="">3 &rarr; 2</td><td class="">4 &rarr; 5</td><td class="">7 &rarr; 5</td></tr>
+<tr class=""><td class="">MC dropout NLL below Deterministic</td><td class="">6 &rarr; 7</td><td class="">7 &rarr; 7</td><td class="">8 &rarr; 6</td><td class="">8 &rarr; 8</td><td class="">3 &rarr; 6</td></tr>
+<tr class=""><td class="">Temperature scaling lowers NLL (of 4)</td><td class="">4 &rarr; 3</td><td class="">4 &rarr; 4</td><td class="">4 &rarr; 4</td><td class="">4 &rarr; 4</td><td class="">3 &rarr; 3</td></tr>
+<tr class=""><td class="">BBP ROC-AUC below Deterministic (of 4)</td><td class="">2 &rarr; 4</td><td class="">3 &rarr; 3</td><td class="">3 &rarr; 4</td><td class="">3 &rarr; 4</td><td class="">4 &rarr; 3</td></tr>
+<tr class=""><td class="">SGLD ROC-AUC below Deterministic (of 4)</td><td class="">2 &rarr; 1</td><td class="">3 &rarr; 4</td><td class="">2 &rarr; 2</td><td class="">3 &rarr; 2</td><td class="">4 &rarr; 3</td></tr>
+</tbody></table></div>
+<div class="tw">
+<div class="tcap"><b>Table 11:</b> Cross-model claims. None reaches 6 of 8 in any row. For regression, Uni-Mol, the largest model, has the largest Deterministic calibration error on all four datasets, consistent with the paper&rsquo;s remark; but the three models differ in more than size (input type, pre-training), and Uni-Mol has more methods to choose the best from, which favours claim (b).</div>
+<table>
+<thead><tr><th class="">Cross-model claim</th><th class="">Measure</th><th class="">Scaffold</th><th class="">Random</th></tr></thead><tbody>
+<tr class=""><td class="">(a) larger models are worse calibrated</td><td class="">calibration error (ECE or CE)</td><td class="">2 of 8 (3 models); Uni-Mol as largest: 5 of 8</td><td class="">2 of 8</td></tr>
+<tr class=""><td class=""></td><td class="">NLL</td><td class="">0 of 8 (Uni-Mol: 2 of 8)</td><td class="">2 of 8</td></tr>
+<tr class=""><td class="">(b) method choice matters more for larger models</td><td class="">calibration error</td><td class="">0 of 8 (Uni-Mol: 2 of 8)</td><td class="">0 of 8</td></tr>
+<tr class=""><td class=""></td><td class="">NLL</td><td class="">1 of 8 (Uni-Mol: 4 of 8)</td><td class="">4 of 8</td></tr>
+</tbody></table></div>
+<div class="verdict mid"><b>Verdict: partly supported.</b> The direction of the method-level claims mostly reproduces. The two cross-model explanatory claims are <b>not supported</b> under the rule fixed in advance.</div>
+<h2>6. Discussion</h2>
+<ul><li><b>What can be relied on.</b> Classification accuracy, most random-split rows and the direction of most method comparisons reproduce. Our pipeline is interchangeable with the authors&rsquo; trainers wherever settings are matched, so it is a sound base for further experiments (Report 2).</li>
+<li><b>Why calibration metrics are fragile.</b> The learning-rate schedule changed ChemBERTa ESOL NLL by about 0.27 and GIN classification ECE by up to 0.14 (BACE: 0.17 with the constant and 0.23 with the linear schedule; authors&rsquo; trainer 0.30). Calibration metrics reward honest variances, which depend on how long and how smoothly the network trains. A benchmark that reports architectures and methods but not the schedule can therefore look irreproducible. This is an observation on ChemBERTa (ESOL, QM7) and GIN (four classification datasets); other models were not tested.</li>
+<li><b>What the paper&rsquo;s authors could do.</b> Release predictions and the exact launch commands, report schedules and seeds, and state aggregation rules for ensembles (the pooled ensemble variance is an average of member variances, without the between-member spread).</li>
+<li><b>An unexplained number.</b> The published DNN QM7 NLL (10.30) and the ChemBERTa ESOL NLL (2.28) are not reproduced by the authors&rsquo; own code under the paper&rsquo;s settings. Without the released predictions the cause cannot be determined.</li></ul>
+<h2>7. Limitations</h2>
+<ul><li><b>Seeds.</b> Three seeds for most cells (ten for the bridge checks on GIN and Uni-Mol); published SDs also come from three seeds, so agreement counts have a ceiling below 100 %.</li>
+<li><b>Scope of the bridge checks.</b> Deterministic networks, scaffold splits and a few datasets (DNN and ChemBERTa: ESOL and QM7; Uni-Mol: ESOL, BACE, QM7). Other UQ methods and random splits were not cross-checked against the authors&rsquo; code. The GIN comparison with the published tables was not repeated under the linear schedule.</li>
+<li><b>Inferred schedule.</b> That the authors&rsquo; GIN and ChemBERTa runs used their code default is inferred from agreement; their launch commands are not available. The random-split seeds of the authors (assumed 0, 1, 2) cannot be checked, although our splits are identical to their routine applied to the Uni-Mol source files (all eight datasets).</li>
+<li><b>Models not run.</b> GROVER (checkpoint link unreachable) and TorchMD-NET; Uni-Mol on random splits. Uni-Mol batches of 128 were realised by gradient accumulation (same gradient, different padding and dropout draws).</li>
+<li><b>Fixed splits.</b> One scaffold split per dataset: conclusions are conditional on those splits. Everything here is exploratory in the sense that no result was confirmed on fresh data.</li></ul>
+<h2>8. Conclusion</h2>
+<p>MUBen&rsquo;s tables reproduce partly: about three quarters of rows within two published SDs, close to the ceiling that three-seed SDs allow, with weaker agreement for regression calibration and for ChemBERTa and GIN on scaffold splits. The gaps are not mainly implementation errors: the authors&rsquo; own code agrees with our pipeline wherever the settings match, the GIN classification gap was a learning-rate schedule that the paper contradicts (the code default differs from the stated rate), the ChemBERTa difference was a schedule choice, and two published numbers (DNN QM7 NLL and ChemBERTa ESOL NLL) are not reproduced by the authors&rsquo; code. The paper&rsquo;s two explanatory claims about model size and method choice are not supported by our counts (with the caveat that the models differ in more than size). The practical conclusion for uncertainty benchmarks is to report the training schedule, the seeds and the aggregation rules as part of the method.</p>
+<h2>9. Implementation and how to reproduce</h2>
+<p>The code, the protocols (with sha256 hashes), the per-seed metric files and the summary tables are in the repository <code>muben-uq</code> and in the accompanying code package (README, code index, checksum manifest). Each experiment is one folder with its protocol and scripts:</p>
+<div class="tw">
+<table class="wide">
+<colgroup><col style="width:26%"><col style="width:58%"><col style="width:16%"></colgroup>
+<thead><tr><th class="">Folder</th><th class="">Content</th><th class="">Used in</th></tr></thead><tbody>
+<tr class=""><td class=""><code>expanded_v4</code></td><td class="">DNN and ChemBERTa pipeline (training units, evaluation behind FROZEN markers) and comparison with the published tables</td><td class="">Report 1</td></tr>
+<tr class=""><td class=""><code>expanded_v8_gin</code>, <code>expanded_v10_unimol</code></td><td class="">GIN and Uni-Mol with the authors&rsquo; encoders; their Laplace stages and controls</td><td class="">Reports 1 and 2</td></tr>
+<tr class=""><td class=""><code>expanded_v9_checks</code></td><td class="">bridge analysis against the authors&rsquo; trainers, descriptor drift, random-split identity, statistics, shift-aware conformal check</td><td class="">Reports 1 and 2</td></tr>
+<tr class=""><td class=""><code>expanded_v11</code>, <code>v12</code>, <code>v17</code></td><td class="">learning-rate schedule and head-initialisation tests for ChemBERTa and GIN</td><td class="">Report 1</td></tr>
+<tr class=""><td class=""><code>expanded_v6_laplace</code>, <code>v13</code>, <code>v14</code>, <code>v15</code>, <code>v18</code></td><td class="">last-layer Laplace; schedule test; ten-network analysis; recalibration baseline and wide grid; evidence-based prior and ensembles</td><td class="">Report 2</td></tr>
+<tr class=""><td class=""><code>expanded_v5_conformal</code>, <code>v16_round1</code></td><td class="">split conformal prediction; few-label and weighted calibration; conformal under the linear schedule</td><td class="">Report 2</td></tr>
+</tbody></table></div>
+<ul><li><b>Inputs (not redistributed).</b> The authors&rsquo; code (MUBen, github.com/Yinghao-Li/MUBen, commit <code>f0ec556</code>, used unmodified), its data files and published tables, the public Uni-Mol and ChemBERTa-77M-MLM checkpoints.</li>
+<li><b>Run order.</b> For each model: <code>prep</code> (features), <code>worker</code> (resumable training units), <code>freeze</code> (a FROZEN marker per split and dataset with the protocol and code digests), <code>evaluate</code> (test metrics only behind a marker); then the comparison scripts (agreement counts, claims), the bridge checks, and the audit scripts.</li>
+<li><b>Environment.</b> Locked requirement files for the CPU base, the GPU stack (PyTorch, torch_geometric, transformers) and the Laplace stage are in the package. Runs used deterministic PyTorch algorithms in FP32 on one GPU of the MBZUAI Slurm cluster. Several scripts contain absolute cluster paths; edit the path line at the top to run elsewhere.</li>
+<li><b>Pitfalls worth knowing.</b> ClinTox ran out of GPU memory with full Uni-Mol batches (gradient accumulation fixed it); a GPU-hiding import order silently moved ChemBERTa inference to the CPU; a post-processing stage skipped datasets that already had results, which a comparison of identical copies exposed. Each was caught by checking that outputs changed after the step.</li>
+<li><b>Verification.</b> The analytic parts of the later extension (Report 2) have unit tests; the reproduction pipeline is verified by the bridge checks above and by reproducing stored metrics from saved predictions to numerical precision.</li></ul><script>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],throwOnError:false});</script></body></html>

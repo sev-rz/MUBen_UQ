@@ -1,0 +1,9 @@
+# DONE 2026-10-09 (turn 223656): items 1, 3, 4 completed; item 2 (NLL gap) left as an unexplained limit, see TIERB_SUMMARY.md.
+# Pending for the next lab-agent turn (written 2026-10-09T14:0xZ because sc-hub MCP was down; not a journal entry)
+State: ChemBERTa and DNN complete (336/336 fits each, 32/32 FROZEN each, 32/32 evaluated each), failures/ empty, PROTOCOL.sha256 OK.
+Jobs 223321, 223322, 223323 have ended (finish2 log ends with CHEMBERTA_EVAL_DONE).
+To do (via run() cells, so the journal can cite them):
+1. `cd expanded_v4; MPLCONFIGDIR=$TMPDIR ../.venv/bin/python tierb_compare.py` -> results/comparison_{scaffold,random}.csv, results/TIERB_SUMMARY.md. Check that ChemBERTa random-0..2 are aggregated (n_reproduced = 3 splits x seeds?) and that the 32 groups appear.
+2. Regression NLL gap (reproduced far below published for ChemBERTa ESOL 1.03 vs 2.28, Lipo 0.54 vs 1.24, QM7 5.3 vs 7.0; DNN random ESOL 0.011 vs 0.107): definitions were compared by reading code only (no run). Source utils/metrics.py: `F.gaussian_nll_loss(preds, lbs, vars)` (mean, no constant) per task on observed rows, macro mean; trainer inverse-transforms mean and variance (var x SD^2) before metrics; loss.py variance = softplus(output)+1e-6. tierb_dnn/tierb_eval follow the same (DECISIONS D1 row "Regression normalisation", original-scale metrics). So no definitional mismatch found at this level; treat the NLL gap as an empirical difference (calibration of the learned variance), report it as a limit in TIERB_SUMMARY, do not call it explained. Optional descriptive check: compare reproduced mean squared error / mean predicted variance on the test split (npz variance arrays exist in results/*/*/*/).
+3. Cross-device (done): n0034, n0037, results/CROSSDEVICE_BACE.json. QM7 DNN gap: open (protocol fixes 8x128 GELU; source default 9 linear/ReLU); sensitivity run would be descriptive only.
+4. Write the verdict note, then final handoff("complete").

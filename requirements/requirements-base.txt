@@ -1,0 +1,7 @@
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.6.1
+pandas==2.2.3
+matplotlib==3.10.3
+rdkit==2024.9.6
+descriptastorus==2.8.0

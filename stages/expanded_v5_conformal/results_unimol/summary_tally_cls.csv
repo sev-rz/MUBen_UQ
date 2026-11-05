@@ -1,0 +1,4 @@
+kind,contrast,base,stype,datasets,narrower_all,wider_all,mixed_all,interpretable,narrower_interp,wider_interp,overall_statement
+cls,P1: Laplace - Deterministic,Uni-Mol,scaffold,4,0,1,3,2,0,1,no overall statement
+cls,P2: Laplace - Ensembles,Uni-Mol,scaffold,4,0,3,1,2,0,2,no overall statement
+cls,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,4,1,1,2,2,1,1,no overall statement

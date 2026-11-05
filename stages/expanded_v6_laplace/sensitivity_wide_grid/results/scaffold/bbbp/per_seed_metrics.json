@@ -1,0 +1,50 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bbbp",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 204,
+    "roc-auc": 0.7022569444444444,
+    "prc-auc": 0.7177500190807522,
+    "ece": 0.2682362761229338,
+    "mce": 0.4253359620197114,
+    "nll": 0.9406249955385968,
+    "brier": 0.2908754778863841,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bbbp",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 204,
+    "roc-auc": 0.6846064814814814,
+    "prc-auc": 0.7442991695453504,
+    "ece": 0.25870560609980586,
+    "mce": 0.6489136056275864,
+    "nll": 0.9041381388525987,
+    "brier": 0.2981075605319954,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bbbp",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 204,
+    "roc-auc": 0.6735146604938271,
+    "prc-auc": 0.7264426237114056,
+    "ece": 0.2910418981241409,
+    "mce": 0.6060467919143324,
+    "nll": 1.008862296730432,
+    "brier": 0.31700372507830843,
+    "tasks_scored": 1
+  }
+]

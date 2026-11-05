@@ -1,0 +1,21 @@
+{
+  "seed": 0,
+  "epochs": 70,
+  "best_epoch": 29,
+  "best_validation_auc": 0.7212454212454213,
+  "temperature": 1.189375877380371,
+  "training_seconds": 1981.0042811799794,
+  "parameters": 3427825,
+  "checkpoint_reload_exact": true,
+  "train_tokens": {
+    "n": 1210,
+    "max_tokens_untruncated": 129,
+    "truncated": 0
+  },
+  "valid_tokens": {
+    "n": 151,
+    "max_tokens_untruncated": 105,
+    "truncated": 0
+  },
+  "code_sha256": "8cff8c1efb10c30a99d9fe8ecb037969aa908fd094bcec5ed90ec14e5bb9bb0a"
+}

@@ -1,0 +1,61 @@
+kind,contrast,base,stype,dataset,repeats,mean_delta,sd_delta,sign_all,cov_a,cov_b,both_hold_all,sign_interpretable
+reg,P1: Laplace - Deterministic,ChemBERTa,random,esol,3,-0.08669329217373711,0.17834444407477731,mixed,0.9203539823008849,0.9203539823008849,True,mixed
+reg,P1: Laplace - Deterministic,ChemBERTa,random,freesolv,3,0.0006657372339547626,0.036979787687063774,mixed,0.9538461538461539,0.9487179487179489,True,mixed
+reg,P1: Laplace - Deterministic,ChemBERTa,random,lipo,3,-0.010071554343565511,0.031083333724401353,mixed,0.9158730158730158,0.9119047619047619,True,mixed
+reg,P1: Laplace - Deterministic,ChemBERTa,random,qm7,3,-6.993901240989639,6.174917517042729,mixed,0.9143416544297601,0.9167890357317671,False,not interpretable
+reg,P1: Laplace - Deterministic,ChemBERTa,scaffold,esol,3,-0.0276957335891234,0.05359836153420639,mixed,0.9233038348082596,0.9056047197640118,True,mixed
+reg,P1: Laplace - Deterministic,ChemBERTa,scaffold,freesolv,3,1.3886454715733165,0.4767387668858394,wider,0.9846153846153848,0.9743589743589745,False,not interpretable
+reg,P1: Laplace - Deterministic,ChemBERTa,scaffold,lipo,3,-0.027086703005865537,0.027448875504059705,mixed,0.9095238095238095,0.9103174603174603,True,mixed
+reg,P1: Laplace - Deterministic,ChemBERTa,scaffold,qm7,3,-22.456201038842096,10.405767719794222,narrower,0.8869309838472833,0.8859520313264806,False,not interpretable
+reg,P1: Laplace - Deterministic,DNN,random,esol,3,0.002659018150321213,0.04655100181556602,mixed,0.9056047197640118,0.8997050147492626,True,mixed
+reg,P1: Laplace - Deterministic,DNN,random,freesolv,3,-0.12285819545831596,0.3355926311624066,mixed,0.9487179487179488,0.953846153846154,False,not interpretable
+reg,P1: Laplace - Deterministic,DNN,random,lipo,3,0.0012540068799515858,0.006307408810846506,mixed,0.9103174603174603,0.9095238095238095,True,mixed
+reg,P1: Laplace - Deterministic,DNN,random,qm7,3,1.0854393907181077,0.7524936975767066,wider,0.9074889867841409,0.9060205580029369,False,not interpretable
+reg,P1: Laplace - Deterministic,DNN,scaffold,esol,3,0.13058131462296588,0.1323938630974686,mixed,0.9498525073746314,0.9351032448377582,False,not interpretable
+reg,P1: Laplace - Deterministic,DNN,scaffold,freesolv,3,-0.3532477947409965,0.5747136853959739,mixed,0.8871794871794871,0.8974358974358974,True,mixed
+reg,P1: Laplace - Deterministic,DNN,scaffold,lipo,3,0.0024595885460946634,0.0059475768311607995,mixed,0.8952380952380952,0.8952380952380953,True,mixed
+reg,P1: Laplace - Deterministic,DNN,scaffold,qm7,3,6.801852543409666,3.0360687766277916,wider,0.8742046010768477,0.873225648556045,False,not interpretable
+reg,P1: Laplace - Deterministic,GIN,random,esol,3,-0.05681124961012474,0.09695092664332709,mixed,0.896755162241888,0.896755162241888,True,mixed
+reg,P1: Laplace - Deterministic,GIN,random,freesolv,3,-0.2007784936162514,0.46003009145763807,mixed,0.8974358974358975,0.9179487179487181,False,not interpretable
+reg,P1: Laplace - Deterministic,GIN,random,lipo,3,0.0015019028003374995,0.008044163442908198,mixed,0.9071428571428571,0.9055555555555556,True,mixed
+reg,P1: Laplace - Deterministic,GIN,random,qm7,3,0.586359425240706,0.785412984638384,mixed,0.9138521781693588,0.9138521781693588,False,not interpretable
+reg,P1: Laplace - Deterministic,GIN,scaffold,esol,3,-0.511728493397506,0.4187326439022058,narrower,0.920353982300885,0.9203539823008849,False,not interpretable
+reg,P1: Laplace - Deterministic,GIN,scaffold,freesolv,3,0.6982758229477669,1.629919071357482,mixed,0.9435897435897437,0.9179487179487181,False,not interpretable
+reg,P1: Laplace - Deterministic,GIN,scaffold,lipo,3,-0.05190421105800702,0.026322378065574543,narrower,0.9150793650793653,0.9166666666666666,True,narrower
+reg,P1: Laplace - Deterministic,GIN,scaffold,qm7,3,5.529171408239203,4.184600592657566,mixed,0.9348996573666177,0.9300048947626042,False,not interpretable
+reg,P2: Laplace - Ensembles,ChemBERTa,random,esol,3,-0.05938182903986089,0.11291068013041215,mixed,0.9203539823008849,0.9380530973451328,True,mixed
+reg,P2: Laplace - Ensembles,ChemBERTa,random,freesolv,3,0.5766884701584726,0.620059310405828,mixed,0.9538461538461539,0.9435897435897437,False,not interpretable
+reg,P2: Laplace - Ensembles,ChemBERTa,random,lipo,3,0.02091271184041495,0.04651793849198718,mixed,0.9158730158730158,0.9142857142857143,True,mixed
+reg,P2: Laplace - Ensembles,ChemBERTa,random,qm7,3,-2.0535638911430283,7.409595625743725,mixed,0.9143416544297601,0.9104258443465492,False,not interpretable
+reg,P2: Laplace - Ensembles,ChemBERTa,scaffold,esol,3,0.0907183313761147,0.047319778170015814,wider,0.9233038348082596,0.911504424778761,True,wider
+reg,P2: Laplace - Ensembles,ChemBERTa,scaffold,freesolv,3,1.003538539650308,0.570268228350781,wider,0.9846153846153848,0.9692307692307692,False,not interpretable
+reg,P2: Laplace - Ensembles,ChemBERTa,scaffold,lipo,3,0.03713939254211255,0.03403829075663063,mixed,0.9095238095238095,0.9119047619047619,True,mixed
+reg,P2: Laplace - Ensembles,ChemBERTa,scaffold,qm7,3,30.665029732667524,5.245982735091039,wider,0.8869309838472833,0.881057268722467,False,not interpretable
+reg,P2: Laplace - Ensembles,DNN,random,esol,3,-0.0406356805484022,0.08633372325072992,mixed,0.9056047197640118,0.9203539823008849,True,mixed
+reg,P2: Laplace - Ensembles,DNN,random,freesolv,3,0.2565606896354682,0.562022993531996,mixed,0.9487179487179488,0.9487179487179488,False,not interpretable
+reg,P2: Laplace - Ensembles,DNN,random,lipo,3,0.16615238300247434,0.03844519812647369,wider,0.9103174603174603,0.8952380952380953,True,wider
+reg,P2: Laplace - Ensembles,DNN,random,qm7,3,1.771349787458803,3.8781081581570245,mixed,0.9074889867841409,0.9138521781693587,False,not interpretable
+reg,P2: Laplace - Ensembles,DNN,scaffold,esol,3,0.22256380374529883,0.16212723618106917,wider,0.9498525073746314,0.9380530973451328,False,not interpretable
+reg,P2: Laplace - Ensembles,DNN,scaffold,freesolv,3,-0.371673862276,0.9730867219058001,mixed,0.8871794871794871,0.9384615384615383,True,mixed
+reg,P2: Laplace - Ensembles,DNN,scaffold,lipo,3,0.14659485702379627,0.05874869164523214,wider,0.8952380952380952,0.8928571428571429,True,wider
+reg,P2: Laplace - Ensembles,DNN,scaffold,qm7,3,94.94324408952451,11.218023233817961,wider,0.8742046010768477,0.8707782672540382,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,random,esol,3,-0.07895322820795399,0.4657189190883095,mixed,0.896755162241888,0.887905604719764,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,random,freesolv,3,0.1057386296487084,1.0825578587488278,mixed,0.8974358974358975,0.9282051282051281,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,random,lipo,3,-0.013923354510510855,0.28354317545526103,mixed,0.9071428571428571,0.9063492063492063,True,mixed
+reg,P2: Laplace - Ensembles,GIN,random,qm7,3,9.678836372444474,17.320348201886564,mixed,0.9138521781693588,0.9074889867841409,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,scaffold,esol,3,0.22054122466591183,0.4542145356035693,mixed,0.920353982300885,0.9380530973451328,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,scaffold,freesolv,3,2.327536457794416,2.4246462666815103,mixed,0.9435897435897437,0.953846153846154,False,not interpretable
+reg,P2: Laplace - Ensembles,GIN,scaffold,lipo,3,0.1204035498759275,0.2543748199949748,mixed,0.9150793650793653,0.9261904761904761,True,mixed
+reg,P2: Laplace - Ensembles,GIN,scaffold,qm7,3,9.47873309596802,7.0406886870051775,wider,0.9348996573666177,0.9353891336270191,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,esol,3,-0.01840320396848938,0.03303454664144664,mixed,0.9292035398230089,0.9233038348082596,True,mixed
+reg,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,freesolv,3,0.3416717823325814,0.28237661934614644,wider,0.9794871794871796,0.9846153846153848,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,lipo,3,0.008924879310127606,0.005873219180567152,wider,0.9071428571428571,0.9206349206349206,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,ChemBERTa,scaffold,qm7,3,0.0,0.0,mixed,0.8869309838472833,0.8869309838472833,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,DNN,scaffold,esol,3,0.052461760526319935,0.1300203779247955,mixed,0.9380530973451329,0.9380530973451328,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,DNN,scaffold,freesolv,3,-0.1320087996735951,0.1547094507821391,narrower,0.8871794871794871,0.8923076923076924,True,narrower
+reg,P3: Novelty Laplace - Laplace constant,DNN,scaffold,lipo,3,0.010219131028050832,0.04776067408441055,mixed,0.8825396825396825,0.8912698412698412,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,DNN,scaffold,qm7,3,-10.21626583074692,25.40641504573131,mixed,0.8805677924620655,0.8830151737640725,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,GIN,scaffold,esol,3,0.06020606654523449,0.08418009234211148,mixed,0.920353982300885,0.9233038348082596,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,GIN,scaffold,freesolv,3,0.0,0.0,mixed,0.9435897435897437,0.9435897435897437,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,GIN,scaffold,lipo,3,0.08312257659068652,0.20194809716783085,mixed,0.9214285714285714,0.9182539682539682,False,not interpretable
+reg,P3: Novelty Laplace - Laplace constant,GIN,scaffold,qm7,3,-0.8377211576532583,1.6019711989249719,mixed,0.9348996573666177,0.9353891336270191,False,not interpretable

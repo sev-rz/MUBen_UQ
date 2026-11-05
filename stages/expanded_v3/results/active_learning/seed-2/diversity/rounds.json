@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10200,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 1.1729004599364385,
+    "epochs": 141,
+    "best_epoch": 90,
+    "train_seconds": 0.0076747615821659565,
+    "select_seconds": 0.005785604007542133
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10201,
+    "validation_auc": 0.6695970695970695,
+    "validation_nll": 0.9027090436260297,
+    "epochs": 150,
+    "best_epoch": 99,
+    "train_seconds": 1.5251636169850826,
+    "select_seconds": 0.006294190883636475
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10202,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 0.7850280460870724,
+    "epochs": 181,
+    "best_epoch": 130,
+    "train_seconds": 1.922028826083988,
+    "select_seconds": 0.0059404559433460236
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10203,
+    "validation_auc": 0.7194139194139194,
+    "validation_nll": 0.8583950145586198,
+    "epochs": 175,
+    "best_epoch": 124,
+    "train_seconds": 1.7756376708857715,
+    "select_seconds": 0.004789562895894051
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10204,
+    "validation_auc": 0.6776556776556777,
+    "validation_nll": 0.8912680836644016,
+    "epochs": 106,
+    "best_epoch": 55,
+    "train_seconds": 1.1045462698675692,
+    "select_seconds": 0.006395384203642607
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10205,
+    "validation_auc": 0.6490842490842491,
+    "validation_nll": 1.0040035080247014,
+    "epochs": 149,
+    "best_epoch": 98,
+    "train_seconds": 1.6706287348642945,
+    "select_seconds": 0.005107080098241568
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10206,
+    "validation_auc": 0.7095238095238096,
+    "validation_nll": 1.1658605489196443,
+    "epochs": 202,
+    "best_epoch": 151,
+    "train_seconds": 2.5728887640871108
+  }
+]

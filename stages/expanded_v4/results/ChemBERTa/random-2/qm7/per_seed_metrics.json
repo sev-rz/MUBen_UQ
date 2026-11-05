@@ -1,0 +1,80 @@
+[
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "Deterministic",
+    "seed": 200,
+    "rmse": 105.41275368810624,
+    "mae": 54.46528754598893,
+    "nll": 4.774321621117813,
+    "ce": 0.031029147758930474,
+    "ce_paired": 0.011379781146345915,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "MC dropout",
+    "seed": 200,
+    "rmse": 105.19772583236725,
+    "mae": 50.594264612074745,
+    "nll": 4.660876632065577,
+    "ce": 0.037818760908673414,
+    "ce_paired": 0.01021258511218176,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "SWAG",
+    "seed": 200,
+    "rmse": 105.83390737416222,
+    "mae": 55.55360575477829,
+    "nll": 4.817319340503805,
+    "ce": 0.030468543267730245,
+    "ce_paired": 0.012786880697055964,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "BBP",
+    "seed": 200,
+    "rmse": 108.95925276689366,
+    "mae": 59.47341188946103,
+    "nll": 4.922644503770053,
+    "ce": 0.0249648015136786,
+    "ce_paired": 0.013320583458426122,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "SGLD",
+    "seed": 200,
+    "rmse": 106.37767189705653,
+    "mae": 58.63573233473338,
+    "nll": 4.788610455321192,
+    "ce": 0.028670228762893445,
+    "ce_paired": 0.014383438088970288,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "ChemBERTa",
+    "split": "random-2",
+    "dataset": "qm7",
+    "method": "Ensembles",
+    "seed": 200,
+    "rmse": 105.37546016223213,
+    "mae": 54.1483250346871,
+    "nll": 4.743321627288251,
+    "ce": 0.029512294662185454,
+    "ce_paired": 0.010789856140736742,
+    "tasks_scored": 1
+  }
+]

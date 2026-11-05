@@ -1,0 +1,7 @@
+backbone,stype,sum_z,p_one_sided,n_improves,n_unclear,n_worsens,n_identical,holm_p
+ChemBERTa,scaffold,-29.5,0.0078,6,1,0,1,0.0468
+DNN,scaffold,-23.5,0.0078,7,0,0,1,0.0468
+GIN,scaffold,-16.71,0.0078,6,2,0,0,0.0468
+GIN,random,-12.72,0.0117,4,4,0,0,0.0468
+DNN,random,-9.52,0.0312,4,4,0,0,0.0624
+ChemBERTa,random,-16.68,0.0586,3,4,1,0,0.0624

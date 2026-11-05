@@ -1,0 +1,146 @@
+{
+  "dataset": "esol",
+  "seed": 100,
+  "laplace": {
+    "prior_precision": 0.001,
+    "grid": [
+      {
+        "alpha": 0.0001,
+        "validation_nll": -0.9427853436267091
+      },
+      {
+        "alpha": 0.001,
+        "validation_nll": -0.9437849445284339
+      },
+      {
+        "alpha": 0.01,
+        "validation_nll": -0.9415168572135602
+      },
+      {
+        "alpha": 0.1,
+        "validation_nll": -0.9366346071134634
+      },
+      {
+        "alpha": 1.0,
+        "validation_nll": -0.9311730595862152
+      },
+      {
+        "alpha": 10.0,
+        "validation_nll": -0.9260435956636938
+      },
+      {
+        "alpha": 100.0,
+        "validation_nll": -0.9229537016295133
+      },
+      {
+        "alpha": 1000.0,
+        "validation_nll": -0.9214877403573304
+      },
+      {
+        "alpha": 10000.0,
+        "validation_nll": -0.9209979759193756
+      }
+    ],
+    "checks": {
+      "gaussian_mean_hessian_matches_autograd": true,
+      "precision_positive_definite": true
+    }
+  },
+  "laplace_fit_seconds": 0.061753492802381516,
+  "corrections": {
+    "Novelty only": {
+      "selected_lambda": 0.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": -0.920977451181531
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": -0.9209522283978337
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": -0.8940690211510135
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": -0.5679697011379127
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 0.2803946862100192
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 1.3302993619383003
+        }
+      ]
+    },
+    "Laplace constant": {
+      "selected_lambda": 0.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": -0.9437849455828282
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": -0.9199904651305524
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": -0.7019534684986843
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": 0.07202089283910142
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 1.1592861868349795
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 2.3033950970935044
+        }
+      ]
+    },
+    "Novelty Laplace": {
+      "selected_lambda": 0.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": -0.9437849455828282
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": -0.9409939849997369
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": -0.9021268477082174
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": -0.5608797015914331
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 0.2839357761086495
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 1.3311037868775062
+        }
+      ]
+    }
+  },
+  "target_mean": -3.0901962288360045,
+  "target_std": 2.082366531285319,
+  "swag": {
+    "fit_seconds": 0.45288471411913633,
+    "snapshots": 20,
+    "sampling": "pinned blockwise low-rank + diagonal"
+  }
+}

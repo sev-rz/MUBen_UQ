@@ -1,0 +1,67 @@
+stype,base,method,cases,ratio_to_deterministic,coverage,share_cases_holding
+random,ChemBERTa,BBP,12,0.9958,0.902,0.8333
+random,ChemBERTa,Ensembles,12,0.9856,0.9044,0.8333
+random,ChemBERTa,Focal Loss,12,0.9972,0.9045,1.0
+random,ChemBERTa,Laplace,12,0.9979,0.9061,0.75
+random,ChemBERTa,Laplace constant,12,0.9979,0.9061,0.75
+random,ChemBERTa,MC dropout,12,0.9887,0.906,0.75
+random,ChemBERTa,Novelty Laplace,12,0.9981,0.9066,0.75
+random,ChemBERTa,Novelty only,12,1.0021,0.9089,0.6667
+random,ChemBERTa,SGLD,12,0.9931,0.9035,0.8333
+random,ChemBERTa,SWAG,12,0.9971,0.908,0.75
+random,ChemBERTa,Temperature,12,1.0,0.9102,0.75
+random,DNN,BBP,12,1.0149,0.9012,0.75
+random,DNN,Ensembles,12,0.9954,0.9008,0.75
+random,DNN,Focal Loss,12,1.0284,0.8976,0.8333
+random,DNN,Laplace,12,1.0005,0.8998,0.8333
+random,DNN,Laplace constant,12,0.9998,0.8998,0.8333
+random,DNN,MC dropout,12,1.0012,0.901,0.8333
+random,DNN,Novelty Laplace,12,0.9978,0.8993,0.8333
+random,DNN,Novelty only,12,0.9988,0.8996,0.8333
+random,DNN,SGLD,12,1.0127,0.9026,0.75
+random,DNN,SWAG,12,0.99,0.8947,0.75
+random,DNN,Temperature,12,1.0,0.9,0.8333
+random,GIN,BBP,12,0.9993,0.9017,0.8333
+random,GIN,Ensembles,12,0.988,0.8934,0.9167
+random,GIN,Focal Loss,12,1.0251,0.8889,0.75
+random,GIN,Laplace,12,1.0,0.8865,0.9167
+random,GIN,Laplace constant,12,0.9992,0.8859,0.9167
+random,GIN,MC dropout,12,0.9979,0.89,0.9167
+random,GIN,Novelty Laplace,12,1.0029,0.887,0.9167
+random,GIN,Novelty only,12,1.0025,0.8858,0.9167
+random,GIN,SGLD,12,1.0162,0.8969,0.8333
+random,GIN,SWAG,12,0.9812,0.8978,0.8333
+random,GIN,Temperature,12,1.0,0.8858,0.9167
+scaffold,ChemBERTa,BBP,12,1.0266,0.8228,0.75
+scaffold,ChemBERTa,Ensembles,4,0.9794,0.8122,0.5
+scaffold,ChemBERTa,Focal Loss,12,1.0318,0.8273,0.5
+scaffold,ChemBERTa,Laplace,12,1.0241,0.8237,0.6667
+scaffold,ChemBERTa,Laplace constant,12,1.0224,0.8286,0.6667
+scaffold,ChemBERTa,MC dropout,12,1.0304,0.8296,0.5833
+scaffold,ChemBERTa,Novelty Laplace,12,1.0357,0.8341,0.5
+scaffold,ChemBERTa,Novelty only,12,1.0298,0.8319,0.5
+scaffold,ChemBERTa,SGLD,12,0.9978,0.8247,0.5
+scaffold,ChemBERTa,SWAG,12,1.008,0.8258,0.5
+scaffold,ChemBERTa,Temperature,12,1.0,0.8189,0.6667
+scaffold,DNN,BBP,12,1.0329,0.7999,0.4167
+scaffold,DNN,Ensembles,4,0.9778,0.7766,0.25
+scaffold,DNN,Focal Loss,12,1.0293,0.8059,0.25
+scaffold,DNN,Laplace,12,1.0053,0.7894,0.3333
+scaffold,DNN,Laplace constant,12,1.0012,0.7889,0.3333
+scaffold,DNN,MC dropout,12,1.0069,0.7912,0.3333
+scaffold,DNN,Novelty Laplace,12,1.0218,0.8015,0.5833
+scaffold,DNN,Novelty only,12,1.0214,0.801,0.5833
+scaffold,DNN,SGLD,12,1.0102,0.7972,0.5
+scaffold,DNN,SWAG,12,1.0103,0.7906,0.3333
+scaffold,DNN,Temperature,12,1.0,0.788,0.3333
+scaffold,GIN,BBP,12,1.031,0.7693,0.4167
+scaffold,GIN,Ensembles,4,0.9986,0.7672,0.25
+scaffold,GIN,Focal Loss,12,1.1936,0.8291,0.4167
+scaffold,GIN,Laplace,12,1.0009,0.7526,0.4167
+scaffold,GIN,Laplace constant,12,1.0013,0.753,0.4167
+scaffold,GIN,MC dropout,12,0.9922,0.7459,0.3333
+scaffold,GIN,Novelty Laplace,12,1.0082,0.7566,0.4167
+scaffold,GIN,Novelty only,12,1.0061,0.7564,0.4167
+scaffold,GIN,SGLD,12,1.1196,0.795,0.3333
+scaffold,GIN,SWAG,12,1.114,0.7985,0.5
+scaffold,GIN,Temperature,12,1.0,0.7531,0.4167

@@ -1,0 +1,17 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 420,
+    "rmse": 0.6950562239685026,
+    "mae": 0.4979087484398084,
+    "nll": 0.2302207778377857,
+    "ce": 0.027772435228417665,
+    "ce_paired": 0.000994152046783627,
+    "tasks_scored": 1
+  }
+]

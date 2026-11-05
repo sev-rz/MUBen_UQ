@@ -1,0 +1,25 @@
+stype,dataset,mean_delta,sd,repeats,all_neg,all_pos,verdict,variant
+scaffold,bace,-0.10569662115399803,0.02355965966781071,3,True,False,improves,Laplace constant
+scaffold,bbbp,-0.0035168190924356932,0.006091309349126888,3,False,False,mixed,Laplace constant
+scaffold,clintox,0.0,0.0,3,False,False,mixed,Laplace constant
+scaffold,esol,-0.15354956363957598,0.08112444735252072,3,True,False,improves,Laplace constant
+scaffold,freesolv,-0.052080505344690144,0.0781505154762865,3,False,False,mixed,Laplace constant
+scaffold,lipo,-0.3177979816665957,0.15102181319425131,3,True,False,improves,Laplace constant
+scaffold,qm7,-0.15372793524833353,0.12657687472912607,3,True,False,improves,Laplace constant
+scaffold,tox21,-0.0021014540968626316,0.001583560250625253,3,True,False,improves,Laplace constant
+scaffold,bace,-0.12405577135545443,0.025484708223504585,3,True,False,improves,Novelty only
+scaffold,bbbp,-0.06838912862163889,0.08579103411977682,3,False,False,mixed,Novelty only
+scaffold,clintox,-0.0006068008499893566,0.0010618866693894876,3,False,False,mixed,Novelty only
+scaffold,esol,-0.10248292746433485,0.05445596417094208,3,True,False,improves,Novelty only
+scaffold,freesolv,-0.051971646294571926,0.10852977178363252,3,False,False,mixed,Novelty only
+scaffold,lipo,-0.3858107944936983,0.18539452290197306,3,True,False,improves,Novelty only
+scaffold,qm7,-0.1998396626227077,0.09977792113807897,3,True,False,improves,Novelty only
+scaffold,tox21,-0.001160200643757751,0.003012231188212054,3,False,False,mixed,Novelty only
+scaffold,bace,-0.118307411566049,0.02528548126192278,3,True,False,improves,Novelty Laplace
+scaffold,bbbp,-0.02666018461532556,0.023186162941479703,3,False,False,mixed,Novelty Laplace
+scaffold,clintox,-0.0005991043566620965,0.001071295529155143,3,False,False,mixed,Novelty Laplace
+scaffold,esol,-0.15080549585820727,0.06543847847651604,3,True,False,improves,Novelty Laplace
+scaffold,freesolv,-0.04365011761175319,0.060472369650785895,3,True,False,improves,Novelty Laplace
+scaffold,lipo,-0.3862014115074004,0.18614982566862498,3,True,False,improves,Novelty Laplace
+scaffold,qm7,-0.19953800631887977,0.10100699825233776,3,True,False,improves,Novelty Laplace
+scaffold,tox21,-0.0017022955224492338,0.001431142452757042,3,True,False,improves,Novelty Laplace

@@ -1,0 +1,30 @@
+{
+ "calibration (ECE / CE)": [
+  {
+   "split_type": "random",
+   "datasets": 8,
+   "a_supported": 2,
+   "b_supported": 0
+  },
+  {
+   "split_type": "scaffold",
+   "datasets": 8,
+   "a_supported": 2,
+   "b_supported": 0
+  }
+ ],
+ "NLL (robustness)": [
+  {
+   "split_type": "random",
+   "datasets": 8,
+   "a_supported": 2,
+   "b_supported": 4
+  },
+  {
+   "split_type": "scaffold",
+   "datasets": 8,
+   "a_supported": 0,
+   "b_supported": 1
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-10T11:36:21.630532+00:00",
+  "split": "random-0",
+  "dataset": "tox21",
+  "seeds": [
+    0
+  ],
+  "protocol_sha256": "7bde8e217d09991b89f63666cf3b5de3c0b6d7796d2fb33586539713bf609772",
+  "code_sha256": "0c08cd99cec3a973faf77111ec23bfe4c859d28d2a5ed5276b227f60dde9cd05",
+  "lambda_at_upper_edge": [],
+  "test_unopened_by_laplace": true
+}

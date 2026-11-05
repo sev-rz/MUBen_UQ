@@ -1,0 +1,11 @@
+dataset,metric,authors(10),ours default-init,d_default_vs_authors
+bace,roc-auc,0.7333,0.7484 (n=10),0.52
+bace,prc-auc,0.7231,0.7191 (n=10),-0.12
+bace,ece,0.3036,0.1888 (n=10),-1.06
+bace,nll,1.8987,0.7195 (n=10),-0.88
+bace,brier,0.3339,0.2440 (n=10),-1.19
+clintox,roc-auc,0.6457,0.6890 (n=10),1.32
+clintox,prc-auc,0.5553,0.5994 (n=10),1.5
+clintox,ece,0.1813,0.1191 (n=10),-1.01
+clintox,nll,0.4206,0.4366 (n=10),0.25
+clintox,brier,0.1174,0.0938 (n=10),-0.88

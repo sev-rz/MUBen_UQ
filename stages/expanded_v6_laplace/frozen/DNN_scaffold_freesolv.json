@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-10T11:35:07.344814+00:00",
+  "backbone": "DNN",
+  "split": "scaffold",
+  "dataset": "freesolv",
+  "seeds": [
+    0,
+    100,
+    200
+  ],
+  "protocol_sha256": "7bde8e217d09991b89f63666cf3b5de3c0b6d7796d2fb33586539713bf609772",
+  "code_sha256": "1a7500fd29164c281bdd5a5233ebd6cb6d0ffbb948cac99b0539fba38fcb5ebe",
+  "task_fits": 3,
+  "alpha_at_grid_boundary": [
+    {
+      "seed": 100,
+      "task": 0,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 0,
+      "alpha": 0.0001
+    }
+  ],
+  "test_unopened_by_laplace": true
+}

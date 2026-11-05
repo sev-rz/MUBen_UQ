@@ -1,0 +1,18 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-2",
+    "dataset": "clintox",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 148,
+    "roc-auc": 0.841347848112418,
+    "prc-auc": 0.6662895403074908,
+    "ece": 0.06084223918549854,
+    "mce": 0.8980927474469912,
+    "nll": 0.2829323515991861,
+    "brier": 0.05919385984273175,
+    "tasks_scored": 2
+  }
+]

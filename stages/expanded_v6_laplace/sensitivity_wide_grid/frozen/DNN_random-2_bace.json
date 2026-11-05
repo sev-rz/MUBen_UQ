@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-10T11:44:29.959702+00:00",
+  "split": "random-2",
+  "dataset": "bace",
+  "grid": [
+    1e-08,
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "grid_sha16": "9bb59f4fa00dca6a",
+  "protocol_sha256": "7bde8e217d09991b89f63666cf3b5de3c0b6d7796d2fb33586539713bf609772",
+  "registration": "n0061",
+  "task_fits": 1,
+  "alpha_at_grid_edge": [],
+  "cholesky_fallbacks_so_far": 0,
+  "test_unopened_by_laplace": true
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<line x1="110" x2="1060" y1="600.0" y2="600.0" stroke="#DDD"/><text x="98" y="606.0" text-anchor="end" font-size="20" fill="#222">0.6</text>
+<line x1="110" x2="1060" y1="460.0" y2="460.0" stroke="#DDD"/><text x="98" y="466.0" text-anchor="end" font-size="20" fill="#222">0.7</text>
+<line x1="110" x2="1060" y1="319.99999999999994" y2="319.99999999999994" stroke="#DDD"/><text x="98" y="325.99999999999994" text-anchor="end" font-size="20" fill="#222">0.8</text>
+<line x1="110" x2="1060" y1="179.99999999999994" y2="179.99999999999994" stroke="#DDD"/><text x="98" y="185.99999999999994" text-anchor="end" font-size="20" fill="#222">0.9</text>
+<line x1="110" x2="1060" y1="40.0" y2="40.0" stroke="#DDD"/><text x="98" y="46.0" text-anchor="end" font-size="20" fill="#222">1.0</text>
+<line x1="110" x2="1060" y1="179.99999999999994" y2="179.99999999999994" stroke="#222" stroke-width="2" stroke-dasharray="8 6"/>
+
+<rect x="136.125" y="179.99999999999994" width="61.75" height="420.00000000000006" fill="#AAB0B6"/>
+<text x="167.0" y="171.99999999999994" text-anchor="middle" font-size="19" fill="#222">0.90</text>
+<rect x="197.875" y="336.7999999999999" width="61.75" height="263.2000000000001" fill="#C9632C"/>
+<text x="228.75" y="328.7999999999999" text-anchor="middle" font-size="19" fill="#222">0.79</text>
+<rect x="259.625" y="174.39999999999992" width="61.75" height="425.6000000000001" fill="#1C808E"/>
+<text x="290.5" y="166.39999999999992" text-anchor="middle" font-size="19" fill="#222">0.90</text>
+<text x="228.75" y="634" text-anchor="middle" font-size="23" fill="#222">DNN</text>
+<rect x="373.625" y="165.99999999999994" width="61.75" height="434.00000000000006" fill="#AAB0B6"/>
+<text x="404.5" y="157.99999999999994" text-anchor="middle" font-size="19" fill="#222">0.91</text>
+<rect x="435.375" y="293.4000000000001" width="61.75" height="306.5999999999999" fill="#C9632C"/>
+<text x="466.25" y="285.4000000000001" text-anchor="middle" font-size="19" fill="#222">0.82</text>
+<rect x="497.125" y="174.39999999999992" width="61.75" height="425.6000000000001" fill="#1C808E"/>
+<text x="528.0" y="166.39999999999992" text-anchor="middle" font-size="19" fill="#222">0.90</text>
+<text x="466.25" y="634" text-anchor="middle" font-size="23" fill="#222">ChemBERTa</text>
+<rect x="611.125" y="199.59999999999997" width="61.75" height="400.40000000000003" fill="#AAB0B6"/>
+<text x="642.0" y="191.59999999999997" text-anchor="middle" font-size="19" fill="#222">0.89</text>
+<rect x="672.875" y="385.79999999999995" width="61.75" height="214.20000000000005" fill="#C9632C"/>
+<text x="703.75" y="377.79999999999995" text-anchor="middle" font-size="19" fill="#222">0.75</text>
+<rect x="734.625" y="174.39999999999992" width="61.75" height="425.6000000000001" fill="#1C808E"/>
+<text x="765.5" y="166.39999999999992" text-anchor="middle" font-size="19" fill="#222">0.90</text>
+<text x="703.75" y="634" text-anchor="middle" font-size="23" fill="#222">GIN</text>
+<rect x="910.375" y="297.6" width="61.75" height="302.4" fill="#C9632C"/>
+<text x="941.25" y="289.6" text-anchor="middle" font-size="19" fill="#222">0.82</text>
+<rect x="972.125" y="172.99999999999994" width="61.75" height="427.00000000000006" fill="#1C808E"/>
+<text x="1003.0" y="164.99999999999994" text-anchor="middle" font-size="19" fill="#222">0.91</text>
+<text x="941.25" y="634" text-anchor="middle" font-size="23" fill="#222">Uni-Mol</text>
+<line x1="110" x2="110" y1="40" y2="600" stroke="#222"/><line x1="110" x2="1060" y1="600" y2="600" stroke="#222"/>
+<text transform="translate(34,320.0) rotate(-90)" text-anchor="middle" font-size="22" fill="#222">coverage (target 0.90)</text>
+<rect x="150" y="680" width="22" height="22" fill="#AAB0B6"/><text x="182" y="698" font-size="21" fill="#222">random split</text>
+<rect x="380" y="680" width="22" height="22" fill="#C9632C"/><text x="412" y="698" font-size="21" fill="#222">scaffold split</text>
+<rect x="630" y="680" width="22" height="22" fill="#1C808E"/><text x="662" y="698" font-size="21" fill="#222">scaffold, calibrated on target scaffolds</text>
+<line x1="150" x2="190" y1="738" y2="738" stroke="#222" stroke-width="2" stroke-dasharray="8 6"/><text x="198" y="745" font-size="21" fill="#222">target 0.90</text></svg>

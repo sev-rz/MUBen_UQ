@@ -1,0 +1,80 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 0.6950562277536978,
+    "mae": 0.49790874816638847,
+    "nll": 0.26769499361636945,
+    "ce": 0.02821282939897525,
+    "ce_paired": 0.0010756056808688401,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 0.6955460099348655,
+    "mae": 0.501544284797603,
+    "nll": 0.2393601825309415,
+    "ce": 0.02741682031954685,
+    "ce_paired": 0.001316087838644232,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "SWAG",
+    "seed": 0,
+    "rmse": 0.6959113217134212,
+    "mae": 0.4998166241469072,
+    "nll": 0.2937238489802901,
+    "ce": 0.02925580729337923,
+    "ce_paired": 0.001400823487289652,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "BBP",
+    "seed": 0,
+    "rmse": 0.7012424725361784,
+    "mae": 0.5133304558852871,
+    "nll": 0.1376643014107314,
+    "ce": 0.023428943829988537,
+    "ce_paired": 0.00029508294545888545,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "SGLD",
+    "seed": 0,
+    "rmse": 0.7167008940575103,
+    "mae": 0.5318867325114655,
+    "nll": 0.1454067219906781,
+    "ce": 0.013853399391741426,
+    "ce_paired": 0.0012462704379997617,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "lipo",
+    "method": "Ensembles",
+    "seed": 0,
+    "rmse": 0.6770770501403927,
+    "mae": 0.48641052652382466,
+    "nll": 0.22195904223106447,
+    "ce": 0.028764379083574404,
+    "ce_paired": 0.0011472132712734237,
+    "tasks_scored": 1
+  }
+]

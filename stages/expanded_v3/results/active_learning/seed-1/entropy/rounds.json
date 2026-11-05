@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10100,
+    "validation_auc": 0.6531135531135532,
+    "validation_nll": 1.6840315633897158,
+    "epochs": 165,
+    "best_epoch": 114,
+    "train_seconds": 0.008985504042357206,
+    "select_seconds": 0.0034835543483495712
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10101,
+    "validation_auc": 0.6989010989010989,
+    "validation_nll": 1.2610154916816025,
+    "epochs": 150,
+    "best_epoch": 99,
+    "train_seconds": 1.4257230889052153,
+    "select_seconds": 0.003874286077916622
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10102,
+    "validation_auc": 0.7263736263736263,
+    "validation_nll": 1.5026231738221842,
+    "epochs": 130,
+    "best_epoch": 79,
+    "train_seconds": 1.3376046437770128,
+    "select_seconds": 0.007035419810563326
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10103,
+    "validation_auc": 0.7230769230769232,
+    "validation_nll": 0.9471962984169525,
+    "epochs": 141,
+    "best_epoch": 90,
+    "train_seconds": 1.6793230781331658,
+    "select_seconds": 0.0041642459109425545
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10104,
+    "validation_auc": 0.6791208791208792,
+    "validation_nll": 0.6884225493512363,
+    "epochs": 52,
+    "best_epoch": 1,
+    "train_seconds": 0.5799561589956284,
+    "select_seconds": 0.004189528990536928
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10105,
+    "validation_auc": 0.7322344322344323,
+    "validation_nll": 1.1574920097711519,
+    "epochs": 146,
+    "best_epoch": 95,
+    "train_seconds": 1.7480717771686614,
+    "select_seconds": 0.005076284054666758
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10106,
+    "validation_auc": 0.7644688644688644,
+    "validation_nll": 1.2100845778978877,
+    "epochs": 154,
+    "best_epoch": 103,
+    "train_seconds": 2.0185993751510978
+  }
+]

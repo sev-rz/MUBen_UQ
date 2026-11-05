@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-10T15:03:55.179701+00:00",
+  "backbone": "GIN",
+  "split": "random-2",
+  "dataset": "bace",
+  "seeds": [
+    200
+  ],
+  "protocol_sha256": "89fd53e4d02bbdbe6769ed68b2cbece2b3a21a51a61cc96c31fb12e3d666dc42",
+  "code_sha256": "11d545f1c1f505db07360a08e4f7249abaec62965d7f56cbb664a59b856ec360",
+  "task_fits": 1,
+  "alpha_at_grid_boundary": [
+    {
+      "seed": 200,
+      "task": 0,
+      "alpha": 0.0001
+    }
+  ],
+  "test_unopened_by_laplace": true
+}

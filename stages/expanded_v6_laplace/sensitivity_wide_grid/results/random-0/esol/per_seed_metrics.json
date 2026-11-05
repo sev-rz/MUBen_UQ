@@ -1,0 +1,17 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "esol",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 113,
+    "rmse": 0.6244620593888718,
+    "mae": 0.45568457887962627,
+    "nll": 0.01295108712884253,
+    "ce": 0.04863449418395162,
+    "ce_paired": 0.002294104554204054,
+    "tasks_scored": 1
+  }
+]

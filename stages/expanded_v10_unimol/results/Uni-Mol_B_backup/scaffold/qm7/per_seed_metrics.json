@@ -1,0 +1,93 @@
+[
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 102.20531189332944,
+    "mae": 53.265224010967025,
+    "nll": 4.379709499133007,
+    "ce": 0.03713668090464076,
+    "ce_paired": 0.0035114814697543243,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 102.00556176409114,
+    "mae": 52.83900111026867,
+    "nll": 4.349628410028862,
+    "ce": 0.03683143224589975,
+    "ce_paired": 0.0026308441087906083,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Deterministic",
+    "seed": 1,
+    "rmse": 104.84172121988169,
+    "mae": 57.67801370062067,
+    "nll": 4.463239362743891,
+    "ce": 0.03640748351453447,
+    "ce_paired": 0.00029497668887751803,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "MC dropout",
+    "seed": 1,
+    "rmse": 104.51993791565451,
+    "mae": 56.66946157039282,
+    "nll": 4.414059085784888,
+    "ce": 0.03598319366484132,
+    "ce_paired": 0.00046042034582468227,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Deterministic",
+    "seed": 2,
+    "rmse": 100.62138395068663,
+    "mae": 51.51751106236758,
+    "nll": 4.4700518573378645,
+    "ce": 0.039868290814660506,
+    "ce_paired": 0.0027414500822168083,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "MC dropout",
+    "seed": 2,
+    "rmse": 100.60548086932494,
+    "mae": 51.10263945116316,
+    "nll": 4.429295150102966,
+    "ce": 0.0395446390200593,
+    "ce_paired": 0.003387756216081812,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "qm7",
+    "method": "Ensembles",
+    "seed": "pooled",
+    "rmse": 101.09105974174709,
+    "mae": 51.658201771260764,
+    "nll": 4.3201656342076244,
+    "ce": 0.036950901683223576,
+    "ce_paired": 0.0021676971997486474,
+    "tasks_scored": 1
+  }
+]

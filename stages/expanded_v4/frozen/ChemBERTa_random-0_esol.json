@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-08T22:18:15.525737+00:00",
+  "backbone": "ChemBERTa",
+  "split": "random-0",
+  "dataset": "esol",
+  "units": 5,
+  "code_sha256": "bb7e4665f1c6f307d34c5eca7f86a3b422b480d06b5d21286a8924bc305cd99b",
+  "protocol_sha256": "2f1fb3aeb2b961b45686bc234e7604ae8224599a772c4705343f53ff74df6fc2",
+  "test_unopened": true
+}

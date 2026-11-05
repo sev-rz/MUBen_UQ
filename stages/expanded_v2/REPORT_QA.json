@@ -1,0 +1,8 @@
+{
+  "pages": 6,
+  "all_pages_rendered_and_visually_checked": true,
+  "no_clipping_or_overflow": true,
+  "result_rows_recomputed": 93,
+  "upstream_comparison_rows": 88,
+  "note": "Source, posterior and metric checks in results/verification.json and FROZEN.json"
+}

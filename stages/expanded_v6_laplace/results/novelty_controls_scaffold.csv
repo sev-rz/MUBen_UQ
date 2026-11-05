@@ -1,0 +1,25 @@
+dataset,comparison,mean,verdict
+bace,Novelty Laplace - Laplace constant,-0.0126,lower
+bace,Novelty only - Laplace constant,-0.0184,lower
+bace,Laplace constant - Laplace,-0.1057,lower
+bbbp,Novelty Laplace - Laplace constant,-0.0231,mixed
+bbbp,Novelty only - Laplace constant,-0.0649,mixed
+bbbp,Laplace constant - Laplace,-0.0035,mixed
+clintox,Novelty Laplace - Laplace constant,-0.0006,mixed
+clintox,Novelty only - Laplace constant,-0.0006,mixed
+clintox,Laplace constant - Laplace,0.0,mixed
+tox21,Novelty Laplace - Laplace constant,0.0004,higher
+tox21,Novelty only - Laplace constant,0.0009,mixed
+tox21,Laplace constant - Laplace,-0.0021,lower
+esol,Novelty Laplace - Laplace constant,0.0027,mixed
+esol,Novelty only - Laplace constant,0.0511,higher
+esol,Laplace constant - Laplace,-0.1535,lower
+freesolv,Novelty Laplace - Laplace constant,0.0084,mixed
+freesolv,Novelty only - Laplace constant,0.0001,mixed
+freesolv,Laplace constant - Laplace,-0.0521,mixed
+lipo,Novelty Laplace - Laplace constant,-0.0684,lower
+lipo,Novelty only - Laplace constant,-0.068,lower
+lipo,Laplace constant - Laplace,-0.3178,lower
+qm7,Novelty Laplace - Laplace constant,-0.0458,lower
+qm7,Novelty only - Laplace constant,-0.0461,lower
+qm7,Laplace constant - Laplace,-0.1537,lower

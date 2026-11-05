@@ -1,0 +1,93 @@
+[
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 0.5882395711035896,
+    "mae": 0.443626526905358,
+    "nll": 0.32841689092848875,
+    "ce": 0.039940201170375465,
+    "ce_paired": 0.008095536460198116,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 0.5861000498052769,
+    "mae": 0.4417088362681711,
+    "nll": 0.2887682179765265,
+    "ce": 0.03930852869979993,
+    "ce_paired": 0.007715121136173767,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Deterministic",
+    "seed": 1,
+    "rmse": 0.5966211954832589,
+    "mae": 0.4359440397889463,
+    "nll": 0.4548434510978889,
+    "ce": 0.04162953759824733,
+    "ce_paired": 0.0072320682659028565,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "MC dropout",
+    "seed": 1,
+    "rmse": 0.5936975456616844,
+    "mae": 0.43344112772255794,
+    "nll": 0.4043264085652737,
+    "ce": 0.041019170875574655,
+    "ce_paired": 0.0066422007399451035,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Deterministic",
+    "seed": 2,
+    "rmse": 0.5789555848330027,
+    "mae": 0.4222913063461693,
+    "nll": 0.7031195646473621,
+    "ce": 0.04500500999421133,
+    "ce_paired": 0.009594522019334051,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "MC dropout",
+    "seed": 2,
+    "rmse": 0.5760682092068087,
+    "mae": 0.42095656733837933,
+    "nll": 0.6377463733453768,
+    "ce": 0.0444264347633472,
+    "ce_paired": 0.009373433583959902,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Ensembles",
+    "seed": "pooled",
+    "rmse": 0.5675743551535833,
+    "mae": 0.41571574475432993,
+    "nll": 0.37580054295225557,
+    "ce": 0.0420480430421562,
+    "ce_paired": 0.0066609977324263055,
+    "tasks_scored": 1
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "stage": "phase3",
+  "state": "complete",
+  "updated_utc": "2026-10-04T17:15:00Z",
+  "tasks": {
+    "random_split_comparison": {"state": "complete", "cell": "c0028", "files": ["results/random_split_comparison.csv", "results/random_split_summary.csv"]},
+    "bayesian_comparison": {"state": "complete", "cell": "c0028", "files": ["results/bayesian_comparison.csv"]},
+    "active_learning": {"state": "complete", "cell": "c0028", "figure_cell": "c0031", "audit_cell": "c0032", "files": ["results/active_learning/summary.csv", "results/active_learning/paired_comparisons.csv", "results/active_learning/discovery_curves.png"]},
+    "chemberta": {"state": "complete", "cells": ["c0029", "c0034"], "slurm_jobs": ["217603 (seed 200)", "217630 (seeds 0/100 repair, freeze, evaluate; CHEMBERTA_DONE)"], "files": ["results/chemberta_comparison.csv", "chemberta_results/per_seed_metrics.json"], "note": "per-seed race and analysis dtype fix in OPERATIONS_LOG.md"},
+    "summary": {"state": "complete", "file": "results/PHASE3_SUMMARY.md"}
+  },
+  "not_started_by_instruction": ["report rewrite", "archive"]
+}

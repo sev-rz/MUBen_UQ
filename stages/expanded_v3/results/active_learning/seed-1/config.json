@@ -1,0 +1,43 @@
+{
+  "pool": "bace official train (1210)",
+  "validation": "bace official valid (151), labels revealed at start, used for checkpoint selection",
+  "test": "bace official test (152), read only after round 6 for final-model metrics",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "strategies": [
+    "random",
+    "greedy",
+    "entropy",
+    "diversity",
+    "balanced"
+  ],
+  "initial": 100,
+  "batch": 25,
+  "rounds": 6,
+  "budget_labels": 401,
+  "model": "v2 run_expansion.Model paper 8x128 GELU via unchanged run_expansion.train (AdamW 2e-4 wd.01, batch256, max400, stop when stale>50, ties accepted, validation ROC-AUC)",
+  "train_seed": "10000+100*seed+round (identical across strategies)",
+  "initial_selection": "numpy default_rng(seed).choice(1210,100,replace=False), label-blind",
+  "random_strategy_rng": "numpy default_rng([seed,round,7])",
+  "fingerprints": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false
+  },
+  "scores": {
+    "activity": "deterministic sigmoid output",
+    "entropy": "binary predictive entropy of that probability",
+    "distance": "1 - max Tanimoto to reference set"
+  },
+  "diversity_reference": "all labeled molecules (labeled pool molecules + 151 validation) plus molecules already in the growing batch",
+  "balanced": "sum of average-ranks (higher=better) of activity, entropy and distance among remaining candidates; distance rank recomputed after every pick; no weights",
+  "ties": "highest score first, then ascending stable integer ID of bace/train/<i>",
+  "scaffold": "Murcko scaffold SMILES, includeChirality=False; empty scaffold = acyclic, counted separately",
+  "new_scaffold_reference": "nonempty scaffolds of positives among the 100 initial and 151 validation molecules",
+  "audc": "mean over rounds 1..6 of cumulative acquired positives (batch-level; within-batch order carries no information)"
+}

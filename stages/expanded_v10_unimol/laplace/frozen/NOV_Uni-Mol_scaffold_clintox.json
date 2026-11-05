@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-11T20:16:43.655508+00:00",
+  "split": "scaffold",
+  "dataset": "clintox",
+  "protocol_sha256": "54c8025f66e5add0289435d9e72f70715cf9469902dad332942ac67b96796d87",
+  "code_sha256": "57d23fb74cc3680f5b634dc93be1516fc365a416e5b6cec3fc28b12c58762618",
+  "lambda_at_upper_edge": [],
+  "test_unopened_by_laplace": true
+}

@@ -1,0 +1,162 @@
+{
+ "freesolv": [
+  {
+   "seed": 0,
+   "nll_deterministic": 1.4416072309083954,
+   "nll_no_posterior": 1.443431055778777,
+   "nll_laplace": 0.9325209899506423
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 1.5242855948464042,
+   "nll_no_posterior": 1.5246845429866418,
+   "nll_laplace": 0.8816755475698166
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 1.0498105332346614,
+   "nll_no_posterior": 1.050517329007342,
+   "nll_laplace": 0.8563025058454261
+  }
+ ],
+ "esol": [
+  {
+   "seed": 0,
+   "nll_deterministic": 0.6726645535748987,
+   "nll_no_posterior": 0.6745163303386932,
+   "nll_laplace": 0.36454084615094856
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 0.7197705326403109,
+   "nll_no_posterior": 0.7209638072721997,
+   "nll_laplace": 0.29906592599157106
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 0.8715539917595302,
+   "nll_no_posterior": 0.8727116162365977,
+   "nll_laplace": 0.3516999324202245
+  }
+ ],
+ "bace": [
+  {
+   "seed": 0,
+   "nll_deterministic": 0.7311284745840877,
+   "nll_no_posterior": 0.7640589744538602,
+   "nll_laplace": 0.605219902408168
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 0.8652156859486692,
+   "nll_no_posterior": 0.9446998741805862,
+   "nll_laplace": 0.5755906266178098
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 1.1031817971530857,
+   "nll_no_posterior": 1.271544081738985,
+   "nll_laplace": 0.6654334543738412
+  }
+ ],
+ "clintox": [
+  {
+   "seed": 0,
+   "nll_deterministic": 0.1510864379763906,
+   "nll_no_posterior": 0.14388707378342258,
+   "nll_laplace": 0.1433151594190189
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 0.1438667044251868,
+   "nll_no_posterior": 0.1509747661395583,
+   "nll_laplace": 0.14097339388764407
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 0.15825623777954945,
+   "nll_no_posterior": 0.15903100618111685,
+   "nll_laplace": 0.15510690896342516
+  }
+ ],
+ "bbbp": [
+  {
+   "seed": 0,
+   "nll_deterministic": 1.3702141382576734,
+   "nll_no_posterior": 1.4712474997572293,
+   "nll_laplace": 0.8824608435765208
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 1.3064154352884603,
+   "nll_no_posterior": 1.394624268464316,
+   "nll_laplace": 0.7791117712160753
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 1.5222646067533294,
+   "nll_no_posterior": 1.6687084790067157,
+   "nll_laplace": 0.7814105867167984
+  }
+ ],
+ "lipo": [
+  {
+   "seed": 0,
+   "nll_deterministic": 0.32841689092848875,
+   "nll_no_posterior": 0.35558010666940537,
+   "nll_laplace": 0.15778012661560584
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 0.4548434510978889,
+   "nll_no_posterior": 0.4880419579966825,
+   "nll_laplace": 0.2526094670291651
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 0.7031195646473621,
+   "nll_no_posterior": 0.7656385754942919,
+   "nll_laplace": 0.45013481053346627
+  }
+ ],
+ "qm7": [
+  {
+   "seed": 0,
+   "nll_deterministic": 4.379709499133007,
+   "nll_no_posterior": 4.379734335055468,
+   "nll_laplace": 4.378904044187547
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 4.463239362743891,
+   "nll_no_posterior": 4.46363949859126,
+   "nll_laplace": 4.462916378247677
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 4.4700518573378645,
+   "nll_no_posterior": 4.470497393204921,
+   "nll_laplace": 4.40637313513815
+  }
+ ],
+ "tox21": [
+  {
+   "seed": 0,
+   "nll_deterministic": 0.28015884032714133,
+   "nll_no_posterior": 0.2847067591591654,
+   "nll_laplace": 0.25788823384740694
+  },
+  {
+   "seed": 1,
+   "nll_deterministic": 0.2641953243969959,
+   "nll_no_posterior": 0.26857743764031805,
+   "nll_laplace": 0.24292564888815274
+  },
+  {
+   "seed": 2,
+   "nll_deterministic": 0.2678889505234247,
+   "nll_no_posterior": 0.26809598088906617,
+   "nll_laplace": 0.26329189032102773
+  }
+ ]
+}

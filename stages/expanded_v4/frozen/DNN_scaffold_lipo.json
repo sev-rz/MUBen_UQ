@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-08T14:23:54.390107+00:00",
+  "backbone": "DNN",
+  "split": "scaffold",
+  "dataset": "lipo",
+  "units": 18,
+  "code_sha256": "1c0c44074932aab8996b117d26538b1db8c083b9504736c52eda4901fec7d260",
+  "protocol_sha256": "2f1fb3aeb2b961b45686bc234e7604ae8224599a772c4705343f53ff74df6fc2",
+  "test_unopened": true
+}

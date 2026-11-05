@@ -1,0 +1,12 @@
+{
+  "inference_seconds": {
+    "Deterministic": 0.0008005737327039242,
+    "MC dropout": 0.024077272973954678,
+    "Ensemble 5 load_and_predict": 0.04913814691826701,
+    "SWAG": 0.08216874301433563,
+    "Laplace": 0.003539332188665867
+  },
+  "ensemble_training_seconds": 17.772271803114563,
+  "baseline_training_seconds": 4.4086578050628304,
+  "notes": "Raw method timings; ensemble includes checkpoint loads, others resident. Do not claim directly comparable inference speedups."
+}

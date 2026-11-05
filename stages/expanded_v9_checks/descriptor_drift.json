@@ -1,0 +1,90 @@
+{
+ "bace": {
+  "molecules": 1513,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.9801188516920263e-08,
+  "p99_abs_diff": 2.89416607046622e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "bbbp": {
+  "molecules": 2039,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.9800656942136072e-08,
+  "p99_abs_diff": 2.8487231795715218e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "clintox": {
+  "molecules": 1478,
+  "frac_molecules_any_feature_differs": 0.0033829499323410014,
+  "n_molecules_differ": 5,
+  "features_affected": 1,
+  "max_abs_diff": 0.9999999430483655,
+  "p99_abs_diff": 2.853649661016533e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "esol": {
+  "molecules": 1128,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.979830437954689e-08,
+  "p99_abs_diff": 2.7535733768679915e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "freesolv": {
+  "molecules": 642,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.98022632128081e-08,
+  "p99_abs_diff": 2.6440101663638416e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "lipo": {
+  "molecules": 4200,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.9802302292658567e-08,
+  "p99_abs_diff": 2.8807933594166002e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "qm7": {
+  "molecules": 6830,
+  "frac_molecules_any_feature_differs": 0.0,
+  "n_molecules_differ": 0,
+  "features_affected": 0,
+  "max_abs_diff": 2.980159508059188e-08,
+  "p99_abs_diff": 2.6393912277988818e-08,
+  "rows_zero_in_tierb": 0,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ },
+ "tox21": {
+  "molecules": 7831,
+  "frac_molecules_any_feature_differs": 0.002043161792874473,
+  "n_molecules_differ": 16,
+  "features_affected": 144,
+  "max_abs_diff": 1.0,
+  "p99_abs_diff": 2.8269472762687542e-08,
+  "rows_zero_in_tierb": 8,
+  "rows_unparsed_here": 0,
+  "material_gt5pct": false
+ }
+}

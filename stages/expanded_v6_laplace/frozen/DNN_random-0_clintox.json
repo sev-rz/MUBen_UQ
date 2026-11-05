@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-10T11:35:08.206927+00:00",
+  "backbone": "DNN",
+  "split": "random-0",
+  "dataset": "clintox",
+  "seeds": [
+    0
+  ],
+  "protocol_sha256": "7bde8e217d09991b89f63666cf3b5de3c0b6d7796d2fb33586539713bf609772",
+  "code_sha256": "1a7500fd29164c281bdd5a5233ebd6cb6d0ffbb948cac99b0539fba38fcb5ebe",
+  "task_fits": 2,
+  "alpha_at_grid_boundary": [],
+  "test_unopened_by_laplace": true
+}

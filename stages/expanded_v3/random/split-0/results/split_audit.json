@@ -1,0 +1,47 @@
+[
+  {
+    "dataset": "bace",
+    "train_n": 1210,
+    "valid_n": 151,
+    "test_n": 152,
+    "train_mean": 0.44958677887916565,
+    "valid_mean": 0.4834437072277069,
+    "test_mean": 0.4868420958518982,
+    "train_test_canonical_overlap": 0,
+    "train_valid_canonical_overlap": 0,
+    "valid_test_canonical_overlap": 0,
+    "nonchiral_scaffold_train_test_overlap": 58,
+    "chiral_scaffold_train_test_overlap": 54,
+    "novel_test_n": 2
+  },
+  {
+    "dataset": "bbbp",
+    "train_n": 1631,
+    "valid_n": 204,
+    "test_n": 204,
+    "train_mean": 0.7627222537994385,
+    "valid_mean": 0.7696078419685364,
+    "test_mean": 0.779411792755127,
+    "train_test_canonical_overlap": 8,
+    "train_valid_canonical_overlap": 8,
+    "valid_test_canonical_overlap": 1,
+    "nonchiral_scaffold_train_test_overlap": 72,
+    "chiral_scaffold_train_test_overlap": 71,
+    "novel_test_n": 51
+  },
+  {
+    "dataset": "esol",
+    "train_n": 902,
+    "valid_n": 113,
+    "test_n": 113,
+    "train_mean": -3.034614086151123,
+    "valid_mean": -3.030637264251709,
+    "test_mean": -3.193194627761841,
+    "train_test_canonical_overlap": 4,
+    "train_valid_canonical_overlap": 2,
+    "valid_test_canonical_overlap": 0,
+    "nonchiral_scaffold_train_test_overlap": 29,
+    "chiral_scaffold_train_test_overlap": 29,
+    "novel_test_n": 20
+  }
+]

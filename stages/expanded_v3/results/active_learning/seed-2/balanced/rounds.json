@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10200,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 1.1729004599364385,
+    "epochs": 141,
+    "best_epoch": 90,
+    "train_seconds": 0.007532142102718353,
+    "select_seconds": 0.01988923316821456
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10201,
+    "validation_auc": 0.6945054945054945,
+    "validation_nll": 1.4725804914229104,
+    "epochs": 231,
+    "best_epoch": 180,
+    "train_seconds": 2.328783618286252,
+    "select_seconds": 0.015273419208824635
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10202,
+    "validation_auc": 0.7238095238095238,
+    "validation_nll": 1.2063639077777084,
+    "epochs": 166,
+    "best_epoch": 115,
+    "train_seconds": 1.676084487233311,
+    "select_seconds": 0.014620169065892696
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10203,
+    "validation_auc": 0.7494505494505496,
+    "validation_nll": 0.9770762912618106,
+    "epochs": 185,
+    "best_epoch": 134,
+    "train_seconds": 1.7214365699328482,
+    "select_seconds": 0.010561863891780376
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10204,
+    "validation_auc": 0.7417582417582418,
+    "validation_nll": 1.1575690230973672,
+    "epochs": 169,
+    "best_epoch": 118,
+    "train_seconds": 1.4719377309083939,
+    "select_seconds": 0.010569780133664608
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10205,
+    "validation_auc": 0.7336996336996336,
+    "validation_nll": 1.0688474678857058,
+    "epochs": 207,
+    "best_epoch": 156,
+    "train_seconds": 2.2984885764308274,
+    "select_seconds": 0.010496448259800673
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10206,
+    "validation_auc": 0.7556776556776557,
+    "validation_nll": 1.0072956118374627,
+    "epochs": 190,
+    "best_epoch": 139,
+    "train_seconds": 1.7964418302290142
+  }
+]

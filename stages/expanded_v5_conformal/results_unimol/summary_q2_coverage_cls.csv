@@ -1,0 +1,13 @@
+base,method,stype,cases,held_all,held_novel,held_familiar,cov_all,cov_novel,cov_familiar
+Uni-Mol,BBP,scaffold,12,0.667,0.75,0.75,0.81,0.794,0.822
+Uni-Mol,Deterministic,scaffold,12,0.583,0.583,0.667,0.816,0.821,0.823
+Uni-Mol,Ensembles,scaffold,4,0.5,0.5,0.75,0.814,0.779,0.846
+Uni-Mol,Focal Loss,scaffold,12,0.5,0.583,0.75,0.843,0.852,0.853
+Uni-Mol,Laplace,scaffold,12,0.5,0.583,0.667,0.83,0.84,0.833
+Uni-Mol,Laplace constant,scaffold,12,0.5,0.583,0.667,0.826,0.836,0.83
+Uni-Mol,MC dropout,scaffold,12,0.583,0.583,0.667,0.817,0.82,0.826
+Uni-Mol,Novelty Laplace,scaffold,12,0.5,0.583,0.667,0.826,0.836,0.836
+Uni-Mol,Novelty only,scaffold,12,0.5,0.583,0.667,0.823,0.833,0.836
+Uni-Mol,SGLD,scaffold,12,0.583,0.583,0.75,0.82,0.795,0.849
+Uni-Mol,SWAG,scaffold,12,0.5,0.5,0.75,0.82,0.803,0.839
+Uni-Mol,Temperature,scaffold,12,0.583,0.5,0.667,0.82,0.819,0.832

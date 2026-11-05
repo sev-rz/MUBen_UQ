@@ -1,0 +1,13 @@
+base,method,stype,cases,cov_novel_marginal,cov_novel_mondrian,gap_marginal,gap_mondrian,median_cost
+Uni-Mol,BBP,scaffold,9,0.766,0.817,0.137,0.088,0.019
+Uni-Mol,Deterministic,scaffold,9,0.788,0.84,0.113,0.061,0.019
+Uni-Mol,Ensembles,scaffold,3,0.765,0.802,0.136,0.1,0.01
+Uni-Mol,Focal Loss,scaffold,9,0.813,0.842,0.092,0.067,0.01
+Uni-Mol,Laplace,scaffold,9,0.797,0.841,0.105,0.061,0.017
+Uni-Mol,Laplace constant,scaffold,9,0.795,0.841,0.106,0.061,0.017
+Uni-Mol,MC dropout,scaffold,9,0.788,0.838,0.114,0.063,0.02
+Uni-Mol,Novelty Laplace,scaffold,9,0.785,0.839,0.116,0.063,0.033
+Uni-Mol,Novelty only,scaffold,9,0.778,0.832,0.123,0.069,0.028
+Uni-Mol,SGLD,scaffold,9,0.763,0.828,0.139,0.072,0.003
+Uni-Mol,SWAG,scaffold,9,0.775,0.823,0.126,0.077,0.004
+Uni-Mol,Temperature,scaffold,9,0.788,0.839,0.113,0.062,0.02

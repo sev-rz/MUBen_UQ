@@ -1,0 +1,18 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "tox21",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 784,
+    "roc-auc": 0.8587828467502806,
+    "prc-auc": 0.4292263454943585,
+    "ece": 0.024996802304322177,
+    "mce": 0.5837836642688876,
+    "nll": 0.17785075224719749,
+    "brier": 0.048740941704724955,
+    "tasks_scored": 12
+  }
+]

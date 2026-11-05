@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10200,
+    "validation_auc": 0.6816849816849817,
+    "validation_nll": 1.1729004599364385,
+    "epochs": 141,
+    "best_epoch": 90,
+    "train_seconds": 1.406928475946188,
+    "select_seconds": 0.004004514776170254
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10201,
+    "validation_auc": 0.6582417582417582,
+    "validation_nll": 0.7813967774769445,
+    "epochs": 120,
+    "best_epoch": 69,
+    "train_seconds": 1.3222588412463665,
+    "select_seconds": 0.004078883212059736
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10202,
+    "validation_auc": 0.6611721611721613,
+    "validation_nll": 1.0733540439079161,
+    "epochs": 181,
+    "best_epoch": 130,
+    "train_seconds": 2.0405122619122267,
+    "select_seconds": 0.0043462831526994705
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10203,
+    "validation_auc": 0.6963369963369963,
+    "validation_nll": 1.1149995572234566,
+    "epochs": 195,
+    "best_epoch": 144,
+    "train_seconds": 2.093831163831055,
+    "select_seconds": 0.0068364450708031654
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10204,
+    "validation_auc": 0.6926739926739927,
+    "validation_nll": 0.9566944982917461,
+    "epochs": 154,
+    "best_epoch": 103,
+    "train_seconds": 1.5400788560509682,
+    "select_seconds": 0.004677226301282644
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10205,
+    "validation_auc": 0.7087912087912088,
+    "validation_nll": 1.1035969988213168,
+    "epochs": 186,
+    "best_epoch": 135,
+    "train_seconds": 2.3399850823916495,
+    "select_seconds": 0.0037707220762968063
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10206,
+    "validation_auc": 0.7098901098901099,
+    "validation_nll": 1.098540029622904,
+    "epochs": 164,
+    "best_epoch": 113,
+    "train_seconds": 2.0921843047253788
+  }
+]

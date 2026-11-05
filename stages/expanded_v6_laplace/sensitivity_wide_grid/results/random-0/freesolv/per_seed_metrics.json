@@ -1,0 +1,17 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "freesolv",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 65,
+    "rmse": 1.224800411836771,
+    "mae": 0.9594121808033785,
+    "nll": 0.7583583972219903,
+    "ce": 0.028428196344297257,
+    "ce_paired": 0.00666303332295235,
+    "tasks_scored": 1
+  }
+]

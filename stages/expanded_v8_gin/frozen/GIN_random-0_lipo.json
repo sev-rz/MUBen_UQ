@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-10T15:00:30.156048+00:00",
+  "backbone": "GIN",
+  "split": "random-0",
+  "dataset": "lipo",
+  "units": 5,
+  "code_sha256": "cde6142ef08f5e92813d8620b76d74511fc025bbedde61d3484d574ad47c94ed",
+  "protocol_sha256": "6ae86f972e7af18420fc337b0f6b7f15758fd96481f025a7c0c6bdcde4383149",
+  "test_unopened": true
+}

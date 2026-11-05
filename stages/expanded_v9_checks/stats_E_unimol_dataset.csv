@@ -1,0 +1,17 @@
+backbone,stype,dataset,diff,lo,hi,se,z,verdict
+Uni-Mol,scaffold,bace,-0.2844,-0.4576,-0.1298,0.0842,-3.38,improves
+Uni-Mol,random,bace,,,,,0.0,unclear
+Uni-Mol,scaffold,bbbp,-0.5853,-0.7214,-0.4581,0.0671,-8.72,improves
+Uni-Mol,random,bbbp,,,,,0.0,unclear
+Uni-Mol,scaffold,clintox,-0.0046,-0.0099,-0.0,0.0026,-1.8,improves
+Uni-Mol,random,clintox,,,,,0.0,unclear
+Uni-Mol,scaffold,tox21,-0.016,-0.0217,-0.0107,0.0028,-5.69,improves
+Uni-Mol,random,tox21,,,,,0.0,unclear
+Uni-Mol,scaffold,esol,-0.4162,-0.6749,-0.2017,0.1206,-3.45,improves
+Uni-Mol,random,esol,,,,,0.0,unclear
+Uni-Mol,scaffold,freesolv,-0.4484,-1.033,-0.0492,0.2559,-1.75,improves
+Uni-Mol,random,freesolv,,,,,0.0,unclear
+Uni-Mol,scaffold,lipo,-0.2086,-0.3141,-0.1368,0.0456,-4.58,improves
+Uni-Mol,random,lipo,,,,,0.0,unclear
+Uni-Mol,scaffold,qm7,-0.0216,-0.0314,-0.0127,0.0049,-4.43,improves
+Uni-Mol,random,qm7,,,,,0.0,unclear

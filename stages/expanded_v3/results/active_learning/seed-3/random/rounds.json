@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10300,
+    "validation_auc": 0.7080586080586081,
+    "validation_nll": 2.0906814180734865,
+    "epochs": 177,
+    "best_epoch": 126,
+    "train_seconds": 1.7660125899128616,
+    "select_seconds": 0.004139227792620659
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10301,
+    "validation_auc": 0.7161172161172161,
+    "validation_nll": 1.3346465732924415,
+    "epochs": 189,
+    "best_epoch": 138,
+    "train_seconds": 1.8944201478734612,
+    "select_seconds": 0.004653159994632006
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10302,
+    "validation_auc": 0.7245421245421245,
+    "validation_nll": 1.0618756645437728,
+    "epochs": 151,
+    "best_epoch": 100,
+    "train_seconds": 1.7826121458783746,
+    "select_seconds": 0.004304603207856417
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10303,
+    "validation_auc": 0.7586080586080587,
+    "validation_nll": 1.2064596871771909,
+    "epochs": 172,
+    "best_epoch": 121,
+    "train_seconds": 1.9649433461017907,
+    "select_seconds": 0.0035894461907446384
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10304,
+    "validation_auc": 0.765934065934066,
+    "validation_nll": 1.0056205961953286,
+    "epochs": 166,
+    "best_epoch": 115,
+    "train_seconds": 1.9712121030315757,
+    "select_seconds": 0.004697293043136597
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10305,
+    "validation_auc": 0.7582417582417582,
+    "validation_nll": 1.2774717444179406,
+    "epochs": 214,
+    "best_epoch": 163,
+    "train_seconds": 2.637458707205951,
+    "select_seconds": 0.004618542268872261
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10306,
+    "validation_auc": 0.7366300366300367,
+    "validation_nll": 1.1583741740528555,
+    "epochs": 180,
+    "best_epoch": 129,
+    "train_seconds": 2.2960102101787925
+  }
+]

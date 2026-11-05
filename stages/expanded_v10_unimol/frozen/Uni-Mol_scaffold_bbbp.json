@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-11T18:17:11.678175+00:00",
+  "backbone": "Uni-Mol",
+  "split": "scaffold",
+  "dataset": "bbbp",
+  "units": 13,
+  "code_sha256": "24360026821e05616da2fe74e0cbab328816c0796cbf6316ab17eac469171bd9",
+  "protocol_sha256": "8ab19980bd7d211addecd004a13981ed8285ac692d9f46d703e309fc9adbb3e1",
+  "test_unopened": true
+}

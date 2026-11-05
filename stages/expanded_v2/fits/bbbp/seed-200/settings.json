@@ -1,0 +1,155 @@
+{
+  "dataset": "bbbp",
+  "seed": 200,
+  "laplace": {
+    "prior_precision": 1000.0,
+    "validation_nll": 0.3242631897372764,
+    "grid": [
+      {
+        "alpha": 0.0001,
+        "validation_nll": 0.3378625184355728
+      },
+      {
+        "alpha": 0.001,
+        "validation_nll": 0.3283469743891682
+      },
+      {
+        "alpha": 0.01,
+        "validation_nll": 0.32445026356878104
+      },
+      {
+        "alpha": 0.1,
+        "validation_nll": 0.324333023729561
+      },
+      {
+        "alpha": 1.0,
+        "validation_nll": 0.3245766306895659
+      },
+      {
+        "alpha": 10.0,
+        "validation_nll": 0.3246537685209662
+      },
+      {
+        "alpha": 100.0,
+        "validation_nll": 0.32434631849854645
+      },
+      {
+        "alpha": 1000.0,
+        "validation_nll": 0.3242631897372764
+      },
+      {
+        "alpha": 10000.0,
+        "validation_nll": 0.32433192410371803
+      }
+    ],
+    "checks": {
+      "library_hessian_matches_bernoulli": true,
+      "library_predictive_matches_analytic": true,
+      "reference_logits_match_sigmoid": true,
+      "categorical_loss_matches_bce": true,
+      "frozen_backbone_unchanged": true,
+      "posterior_precision_positive_definite": true,
+      "hessian_max_abs_error": 2.1316282072803006e-14
+    },
+    "fit_seconds": 0.07702493201941252
+  },
+  "laplace_fit_seconds": 0.0855459626764059,
+  "corrections": {
+    "Novelty only": {
+      "selected_lambda": 1.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": 0.3243460703209829
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": 0.32432403843826574
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": 0.32413648637653725
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": 0.3231391775701397
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 0.33928414943818763
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 0.4555180893937474
+        }
+      ]
+    },
+    "Laplace constant": {
+      "selected_lambda": 0.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": 0.3242631917748777
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": 0.3243438967266377
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": 0.3250997022116975
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": 0.3344307908413617
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 0.415635597560142
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 0.5647751984165437
+        }
+      ]
+    },
+    "Novelty Laplace": {
+      "selected_lambda": 1.0,
+      "grid": [
+        {
+          "lambda": 0.0,
+          "validation_nll": 0.3242631917748777
+        },
+        {
+          "lambda": 0.01,
+          "validation_nll": 0.3242416862628046
+        },
+        {
+          "lambda": 0.1,
+          "validation_nll": 0.32405876310982484
+        },
+        {
+          "lambda": 1.0,
+          "validation_nll": 0.3230989011351852
+        },
+        {
+          "lambda": 10.0,
+          "validation_nll": 0.3393410630456388
+        },
+        {
+          "lambda": 100.0,
+          "validation_nll": 0.45554876260034727
+        }
+      ]
+    }
+  },
+  "target_mean": 0.0,
+  "target_std": 1.0,
+  "temperature": 0.842043399810791,
+  "temperature_fit_seconds": 0.0026848921552300453,
+  "swag": {
+    "fit_seconds": 0.6516260951757431,
+    "snapshots": 20,
+    "sampling": "pinned blockwise low-rank + diagonal"
+  }
+}

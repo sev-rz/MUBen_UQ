@@ -1,0 +1,47 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 420,
+    "rmse": 0.7541017384154498,
+    "mae": 0.5686201006920557,
+    "nll": 0.3702799449695301,
+    "ce": 0.02088463995366616,
+    "ce_paired": 0.001783029001074117,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 420,
+    "rmse": 0.7664343109391439,
+    "mae": 0.5729929641967824,
+    "nll": 0.7444266157062274,
+    "ce": 0.02742212929439191,
+    "ce_paired": 0.0045966105740541845,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "lipo",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 420,
+    "rmse": 0.7549481874244193,
+    "mae": 0.5658375249424302,
+    "nll": 0.6083121971955695,
+    "ce": 0.027263350646281517,
+    "ce_paired": 0.004552750924931381,
+    "tasks_scored": 1
+  }
+]

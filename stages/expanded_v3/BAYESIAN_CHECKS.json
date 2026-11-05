@@ -1,0 +1,6 @@
+{
+  "bbp_kl_matches_torch": true,
+  "sgld_drift_matches_algebra": true,
+  "sgld_noise_variance": 0.00020173803204670548,
+  "expected_noise_variance": 0.0002
+}

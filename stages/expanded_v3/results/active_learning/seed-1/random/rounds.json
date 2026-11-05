@@ -1,0 +1,78 @@
+[
+  {
+    "round": 0,
+    "n_labeled_pool": 100,
+    "train_seed": 10100,
+    "validation_auc": 0.6531135531135532,
+    "validation_nll": 1.6840315633897158,
+    "epochs": 165,
+    "best_epoch": 114,
+    "train_seconds": 1.1419592229649425,
+    "select_seconds": 0.0034340298734605312
+  },
+  {
+    "round": 1,
+    "n_labeled_pool": 125,
+    "train_seed": 10101,
+    "validation_auc": 0.7106227106227107,
+    "validation_nll": 1.1321620461210082,
+    "epochs": 173,
+    "best_epoch": 122,
+    "train_seconds": 1.364560361020267,
+    "select_seconds": 0.0036596222780644894
+  },
+  {
+    "round": 2,
+    "n_labeled_pool": 150,
+    "train_seed": 10102,
+    "validation_auc": 0.7230769230769232,
+    "validation_nll": 1.4266082832487652,
+    "epochs": 190,
+    "best_epoch": 139,
+    "train_seconds": 1.3980262563563883,
+    "select_seconds": 0.003555819857865572
+  },
+  {
+    "round": 3,
+    "n_labeled_pool": 175,
+    "train_seed": 10103,
+    "validation_auc": 0.7084249084249085,
+    "validation_nll": 1.1243459455774585,
+    "epochs": 161,
+    "best_epoch": 110,
+    "train_seconds": 1.250603492371738,
+    "select_seconds": 0.0037800180725753307
+  },
+  {
+    "round": 4,
+    "n_labeled_pool": 200,
+    "train_seed": 10104,
+    "validation_auc": 0.6871794871794872,
+    "validation_nll": 0.6885739797484624,
+    "epochs": 52,
+    "best_epoch": 1,
+    "train_seconds": 0.3822862608358264,
+    "select_seconds": 0.003711021039634943
+  },
+  {
+    "round": 5,
+    "n_labeled_pool": 225,
+    "train_seed": 10105,
+    "validation_auc": 0.7373626373626374,
+    "validation_nll": 1.0980928309507036,
+    "epochs": 206,
+    "best_epoch": 155,
+    "train_seconds": 1.9838647712022066,
+    "select_seconds": 0.004718158394098282
+  },
+  {
+    "round": 6,
+    "n_labeled_pool": 250,
+    "train_seed": 10106,
+    "validation_auc": 0.7630036630036631,
+    "validation_nll": 1.1927655890654834,
+    "epochs": 188,
+    "best_epoch": 137,
+    "train_seconds": 2.2869111602194607
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 141.8181799744032,
+    "mae": 85.4941993271585,
+    "nll": 5.094380185338366,
+    "ce": 0.02659112919438414,
+    "ce_paired": 0.004092679203296527,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 142.01571367679503,
+    "mae": 85.93265471346186,
+    "nll": 5.090712455448737,
+    "ce": 0.026063272685136425,
+    "ce_paired": 0.004299330564892829,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "SWAG",
+    "seed": 0,
+    "rmse": 139.6869670953372,
+    "mae": 86.09312056306449,
+    "nll": 5.039719259015605,
+    "ce": 0.02294560181313799,
+    "ce_paired": 0.0071494374541151455,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "BBP",
+    "seed": 0,
+    "rmse": 150.166117482953,
+    "mae": 90.13636879974052,
+    "nll": 5.284504442461674,
+    "ce": 0.0202922727073448,
+    "ce_paired": 0.01423643632683305,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "SGLD",
+    "seed": 0,
+    "rmse": 160.0205073706118,
+    "mae": 106.62466161144921,
+    "nll": 5.468530346022521,
+    "ce": 0.011340621895003013,
+    "ce_paired": 0.007778152857546064,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "GIN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "Ensembles",
+    "seed": 0,
+    "rmse": 145.52066755352274,
+    "mae": 86.97267544701862,
+    "nll": 5.181308938021124,
+    "ce": 0.02050329388485952,
+    "ce_paired": 0.009771852198370326,
+    "tasks_scored": 1
+  }
+]

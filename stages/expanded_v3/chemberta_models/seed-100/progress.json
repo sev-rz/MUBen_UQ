@@ -1,0 +1,7 @@
+{
+  "seed": 100,
+  "epoch": 90,
+  "best_validation_auc": 0.7073260073260074,
+  "stale": 41,
+  "elapsed_seconds": 2345.3537162248977
+}

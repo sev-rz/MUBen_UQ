@@ -1,0 +1,9 @@
+dataset,n_lmdb,n_csv,sizes_lmdb,sizes_csv,same_multiset,posmatch,raw_posmatch,test_overlap_0,test_jaccard_0,valid_jaccard_0,same_index_sets_0,test_overlap_1,test_jaccard_1,valid_jaccard_1,same_index_sets_1,test_overlap_2,test_jaccard_2,valid_jaccard_2,same_index_sets_2
+bace,1513,1513,"[1210, 151, 152]","[1210, 151, 152]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+bbbp,2039,2039,"[1631, 204, 204]","[1631, 204, 204]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+clintox,1478,1478,"[1182, 148, 148]","[1182, 148, 148]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+tox21,7831,7831,"[6264, 783, 784]","[6264, 783, 784]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+esol,1128,1128,"[902, 113, 113]","[902, 113, 113]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+freesolv,642,642,"[513, 64, 65]","[513, 64, 65]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+lipo,4200,4200,"[3360, 420, 420]","[3360, 420, 420]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True
+qm7,6830,6830,"[5464, 685, 681]","[5464, 685, 681]",True,1.0,1.0,1.0,1.0,1.0,True,1.0,1.0,1.0,True,1.0,1.0,1.0,True

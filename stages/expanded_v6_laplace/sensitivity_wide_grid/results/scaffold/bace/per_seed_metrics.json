@@ -1,0 +1,50 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bace",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 152,
+    "roc-auc": 0.757433489827856,
+    "prc-auc": 0.8008920816272846,
+    "ece": 0.20236825982851347,
+    "mce": 0.455686349038288,
+    "nll": 0.6776110222288295,
+    "brier": 0.23360726262533973,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bace",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 152,
+    "roc-auc": 0.7219613980177361,
+    "prc-auc": 0.7729453864152764,
+    "ece": 0.2124363763904463,
+    "mce": 0.38612565622511374,
+    "nll": 0.7248512929623775,
+    "brier": 0.25151832309940597,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "bace",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 152,
+    "roc-auc": 0.7586506694487914,
+    "prc-auc": 0.7986477990425915,
+    "ece": 0.1845742526181785,
+    "mce": 0.3174468711453017,
+    "nll": 0.6584549209863692,
+    "brier": 0.22613743791450602,
+    "tasks_scored": 1
+  }
+]

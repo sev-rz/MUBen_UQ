@@ -1,0 +1,17 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-0",
+    "dataset": "qm7",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 681,
+    "rmse": 110.57045986228941,
+    "mae": 56.62652380680579,
+    "nll": 4.754293936464978,
+    "ce": 0.037467865547557766,
+    "ce_paired": 0.0059093930982371925,
+    "tasks_scored": 1
+  }
+]

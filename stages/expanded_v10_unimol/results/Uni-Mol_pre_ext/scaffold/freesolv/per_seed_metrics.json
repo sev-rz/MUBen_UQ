@@ -1,0 +1,93 @@
+[
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Deterministic",
+    "seed": 0,
+    "rmse": 1.7705094580851,
+    "mae": 1.2221459817769553,
+    "nll": 1.4416072309083954,
+    "ce": 0.04366870649892476,
+    "ce_paired": 0.011079103083151666,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "MC dropout",
+    "seed": 0,
+    "rmse": 1.7727246068041753,
+    "mae": 1.2234198837917571,
+    "nll": 1.3907711935932034,
+    "ce": 0.042804226963894465,
+    "ce_paired": 0.011060417315478044,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Deterministic",
+    "seed": 1,
+    "rmse": 1.683965879341013,
+    "mae": 1.189714081373683,
+    "nll": 1.5242855948464042,
+    "ce": 0.04597190611415273,
+    "ce_paired": 0.02432108377452507,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "MC dropout",
+    "seed": 1,
+    "rmse": 1.692332257761637,
+    "mae": 1.1928594184090895,
+    "nll": 1.4775320979812692,
+    "ce": 0.045177674746019136,
+    "ce_paired": 0.024738399252569293,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Deterministic",
+    "seed": 2,
+    "rmse": 1.6671449065162522,
+    "mae": 1.1568499307696978,
+    "nll": 1.0498105332346614,
+    "ce": 0.043712825549746724,
+    "ce_paired": 0.016012145748987856,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "MC dropout",
+    "seed": 2,
+    "rmse": 1.66202635674975,
+    "mae": 1.1555284184348493,
+    "nll": 1.0136274458216705,
+    "ce": 0.043036931479990194,
+    "ce_paired": 0.016778262223606354,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "Uni-Mol",
+    "split": "scaffold",
+    "dataset": "freesolv",
+    "method": "Ensembles",
+    "seed": "pooled",
+    "rmse": 1.6304771140316352,
+    "mae": 1.1159879256651086,
+    "nll": 1.0891892601948563,
+    "ce": 0.043165261057127965,
+    "ce_paired": 0.004925256929305511,
+    "tasks_scored": 1
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "device": "NVIDIA RTX 5000 Ada Generation",
+  "units": {
+    "tox21": {
+      "train_n": 6264,
+      "epochs": 200,
+      "best_epoch": 187,
+      "mean_epoch_seconds": 0.5132049629674293,
+      "det_seconds": 102.64731724699959,
+      "swag_seconds": 9.510281580965966,
+      "unit_wall_seconds": 112.40905243204907,
+      "parameters": 261516,
+      "validation_selection": 0.7358251002687014
+    },
+    "qm7": {
+      "train_n": 5464,
+      "epochs": 113,
+      "best_epoch": 62,
+      "mean_epoch_seconds": 0.37718668387197285,
+      "det_seconds": 42.6278467848897,
+      "swag_seconds": 7.5380606153048575,
+      "unit_wall_seconds": 50.18546734564006,
+      "parameters": 260226,
+      "validation_selection": -85.3810043334961
+    }
+  },
+  "test_read": false,
+  "code_sha256": "cde6142ef08f5e92813d8620b76d74511fc025bbedde61d3484d574ad47c94ed"
+}

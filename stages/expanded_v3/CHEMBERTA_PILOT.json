@@ -1,0 +1,24 @@
+{
+  "parameters": 3427825,
+  "epoch_seconds": [
+    16.197804489172995,
+    16.02887905901298
+  ],
+  "estimated_max_seconds_three_seeds": 9718.682693503797,
+  "peak_rss_mib": 680.42578125,
+  "train_tokens": {
+    "n": 1210,
+    "max_tokens_untruncated": 129,
+    "truncated": 0
+  },
+  "valid_tokens": {
+    "n": 151,
+    "max_tokens_untruncated": 105,
+    "truncated": 0
+  },
+  "test_read": false,
+  "microbatch": 8,
+  "effective_batch": 128,
+  "representation": "source pooler_output",
+  "source_sha256": "b96970fc8497ddba37b1dc8f279ebc1832be3852c26147ef33110f8ccc3ef670"
+}

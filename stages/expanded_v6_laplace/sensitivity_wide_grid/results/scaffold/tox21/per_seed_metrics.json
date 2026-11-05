@@ -1,0 +1,50 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "tox21",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 784,
+    "roc-auc": 0.7321656363668335,
+    "prc-auc": 0.3342480486364188,
+    "ece": 0.03360827559859209,
+    "mce": 0.6027750346717603,
+    "nll": 0.27029810308022556,
+    "brier": 0.0761228981674268,
+    "tasks_scored": 12
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "tox21",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 784,
+    "roc-auc": 0.733250047112989,
+    "prc-auc": 0.3453974039520849,
+    "ece": 0.034407366300580396,
+    "mce": 0.653531479739358,
+    "nll": 0.27090894708492536,
+    "brier": 0.07550318148296227,
+    "tasks_scored": 12
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "tox21",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 784,
+    "roc-auc": 0.7310000054612141,
+    "prc-auc": 0.3335718273475938,
+    "ece": 0.034353186448141594,
+    "mce": 0.5561881813290103,
+    "nll": 0.2709779977647805,
+    "brier": 0.07640473321645257,
+    "tasks_scored": 12
+  }
+]

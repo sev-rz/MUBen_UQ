@@ -1,0 +1,18 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "random-1",
+    "dataset": "bbbp",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 204,
+    "roc-auc": 0.9166666666666667,
+    "prc-auc": 0.9712682833205397,
+    "ece": 0.05668055076798016,
+    "mce": 0.6797724456949157,
+    "nll": 0.3086627116446495,
+    "brier": 0.09334672690193709,
+    "tasks_scored": 1
+  }
+]

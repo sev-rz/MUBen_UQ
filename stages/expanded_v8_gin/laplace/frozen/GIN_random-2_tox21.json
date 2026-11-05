@@ -1,0 +1,60 @@
+{
+  "at_utc": "2026-10-10T15:03:56.720975+00:00",
+  "backbone": "GIN",
+  "split": "random-2",
+  "dataset": "tox21",
+  "seeds": [
+    200
+  ],
+  "protocol_sha256": "89fd53e4d02bbdbe6769ed68b2cbece2b3a21a51a61cc96c31fb12e3d666dc42",
+  "code_sha256": "11d545f1c1f505db07360a08e4f7249abaec62965d7f56cbb664a59b856ec360",
+  "task_fits": 12,
+  "alpha_at_grid_boundary": [
+    {
+      "seed": 200,
+      "task": 2,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 3,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 4,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 5,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 7,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 8,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 9,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 10,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 11,
+      "alpha": 0.0001
+    }
+  ],
+  "test_unopened_by_laplace": true
+}

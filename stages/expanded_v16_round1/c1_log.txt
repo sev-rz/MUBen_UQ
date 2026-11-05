@@ -1,0 +1,123 @@
+done bace
+done bbbp
+done clintox
+done tox21
+done esol
+done freesolv
+done lipo
+done qm7
+ backbone kind        method   k      arm   cov  size  cov_base  size_base  size_ratio
+ChemBERTa  cls Deterministic   0     base 0.819 1.081     0.819      1.081       1.000
+ChemBERTa  cls Deterministic   5 balanced 0.869 1.237     0.819      1.080       1.145
+ChemBERTa  cls Deterministic   5     base 0.819 1.080     0.819      1.080       1.000
+ChemBERTa  cls Deterministic   5   pooled 0.826 1.092     0.819      1.080       1.011
+ChemBERTa  cls Deterministic  10 balanced 0.877 1.229     0.819      1.080       1.139
+ChemBERTa  cls Deterministic  10     base 0.819 1.080     0.819      1.080       1.000
+ChemBERTa  cls Deterministic  10   pooled 0.835 1.109     0.819      1.080       1.027
+ChemBERTa  cls Deterministic  20 balanced 0.882 1.230     0.819      1.080       1.139
+ChemBERTa  cls Deterministic  20     base 0.819 1.080     0.819      1.080       1.000
+ChemBERTa  cls Deterministic  20   pooled 0.849 1.135     0.819      1.080       1.051
+ChemBERTa  cls Deterministic  20   target 0.894 1.276     0.819      1.080       1.182
+ChemBERTa  cls Deterministic  50 balanced 0.889 1.236     0.819      1.079       1.146
+ChemBERTa  cls Deterministic  50     base 0.819 1.079     0.819      1.079       1.000
+ChemBERTa  cls Deterministic  50   pooled 0.864 1.170     0.819      1.079       1.084
+ChemBERTa  cls Deterministic  50   target 0.908 1.318     0.819      1.079       1.222
+ChemBERTa  cls Deterministic 100 balanced 0.891 1.236     0.820      1.078       1.146
+ChemBERTa  cls Deterministic 100     base 0.820 1.078     0.820      1.078       1.000
+ChemBERTa  cls Deterministic 100   pooled 0.878 1.200     0.820      1.078       1.113
+ChemBERTa  cls Deterministic 100   target 0.906 1.304     0.820      1.078       1.210
+ChemBERTa  cls       Laplace   0     base 0.824 1.114     0.824      1.114       1.000
+ChemBERTa  cls       Laplace   5 balanced 0.872 1.253     0.824      1.114       1.125
+ChemBERTa  cls       Laplace   5     base 0.824 1.114     0.824      1.114       1.000
+ChemBERTa  cls       Laplace   5   pooled 0.829 1.124     0.824      1.114       1.009
+ChemBERTa  cls       Laplace  10 balanced 0.878 1.250     0.823      1.113       1.122
+ChemBERTa  cls       Laplace  10     base 0.823 1.113     0.823      1.113       1.000
+ChemBERTa  cls       Laplace  10   pooled 0.839 1.141     0.823      1.113       1.025
+ChemBERTa  cls       Laplace  20 balanced 0.883 1.251     0.824      1.114       1.123
+ChemBERTa  cls       Laplace  20     base 0.824 1.114     0.824      1.114       1.000
+ChemBERTa  cls       Laplace  20   pooled 0.853 1.167     0.824      1.114       1.048
+ChemBERTa  cls       Laplace  20   target 0.895 1.292     0.824      1.114       1.161
+ChemBERTa  cls       Laplace  50 balanced 0.891 1.263     0.824      1.114       1.134
+ChemBERTa  cls       Laplace  50     base 0.824 1.114     0.824      1.114       1.000
+ChemBERTa  cls       Laplace  50   pooled 0.868 1.200     0.824      1.114       1.078
+ChemBERTa  cls       Laplace  50   target 0.908 1.336     0.824      1.114       1.200
+ChemBERTa  cls       Laplace 100 balanced 0.892 1.261     0.824      1.112       1.134
+ChemBERTa  cls       Laplace 100     base 0.824 1.112     0.824      1.112       1.000
+ChemBERTa  cls       Laplace 100   pooled 0.880 1.227     0.824      1.112       1.104
+ChemBERTa  cls       Laplace 100   target 0.906 1.323     0.824      1.112       1.190
+      DNN  cls Deterministic   0     base 0.788 1.076     0.788      1.076       1.000
+      DNN  cls Deterministic   5 balanced 0.841 1.226     0.788      1.077       1.139
+      DNN  cls Deterministic   5     base 0.788 1.077     0.788      1.077       1.000
+      DNN  cls Deterministic   5   pooled 0.791 1.087     0.788      1.077       1.010
+      DNN  cls Deterministic  10 balanced 0.851 1.226     0.788      1.076       1.139
+      DNN  cls Deterministic  10     base 0.788 1.076     0.788      1.076       1.000
+      DNN  cls Deterministic  10   pooled 0.795 1.094     0.788      1.076       1.017
+      DNN  cls Deterministic  20 balanced 0.861 1.230     0.788      1.076       1.143
+      DNN  cls Deterministic  20     base 0.788 1.076     0.788      1.076       1.000
+      DNN  cls Deterministic  20   pooled 0.807 1.116     0.788      1.076       1.037
+      DNN  cls Deterministic  20   target 0.897 1.297     0.788      1.076       1.205
+      DNN  cls Deterministic  50 balanced 0.874 1.249     0.790      1.077       1.160
+      DNN  cls Deterministic  50     base 0.790 1.077     0.790      1.077       1.000
+      DNN  cls Deterministic  50   pooled 0.833 1.164     0.790      1.077       1.081
+      DNN  cls Deterministic  50   target 0.909 1.340     0.790      1.077       1.244
+      DNN  cls Deterministic 100 balanced 0.876 1.245     0.794      1.078       1.155
+      DNN  cls Deterministic 100     base 0.794 1.078     0.794      1.078       1.000
+      DNN  cls Deterministic 100   pooled 0.857 1.206     0.794      1.078       1.119
+      DNN  cls Deterministic 100   target 0.906 1.319     0.794      1.078       1.224
+      DNN  cls       Laplace   0     base 0.789 1.084     0.789      1.084       1.000
+      DNN  cls       Laplace   5 balanced 0.842 1.236     0.790      1.085       1.140
+      DNN  cls       Laplace   5     base 0.790 1.085     0.790      1.085       1.000
+      DNN  cls       Laplace   5   pooled 0.791 1.092     0.790      1.085       1.007
+      DNN  cls       Laplace  10 balanced 0.852 1.234     0.789      1.084       1.139
+      DNN  cls       Laplace  10     base 0.789 1.084     0.789      1.084       1.000
+      DNN  cls       Laplace  10   pooled 0.796 1.099     0.789      1.084       1.014
+      DNN  cls       Laplace  20 balanced 0.862 1.239     0.790      1.084       1.143
+      DNN  cls       Laplace  20     base 0.790 1.084     0.790      1.084       1.000
+      DNN  cls       Laplace  20   pooled 0.808 1.121     0.790      1.084       1.034
+      DNN  cls       Laplace  20   target 0.896 1.305     0.790      1.084       1.204
+      DNN  cls       Laplace  50 balanced 0.876 1.260     0.791      1.084       1.163
+      DNN  cls       Laplace  50     base 0.791 1.084     0.791      1.084       1.000
+      DNN  cls       Laplace  50   pooled 0.834 1.170     0.791      1.084       1.079
+      DNN  cls       Laplace  50   target 0.910 1.350     0.791      1.084       1.245
+      DNN  cls       Laplace 100 balanced 0.877 1.257     0.795      1.084       1.159
+      DNN  cls       Laplace 100     base 0.795 1.084     0.795      1.084       1.000
+      DNN  cls       Laplace 100   pooled 0.859 1.215     0.795      1.084       1.120
+      DNN  cls       Laplace 100   target 0.906 1.330     0.795      1.084       1.226
+      GIN  cls Deterministic   0     base 0.753 1.030     0.753      1.030       1.000
+      GIN  cls Deterministic   5 balanced 0.851 1.310     0.753      1.030       1.272
+      GIN  cls Deterministic   5     base 0.753 1.030     0.753      1.030       1.000
+      GIN  cls Deterministic   5   pooled 0.760 1.044     0.753      1.030       1.013
+      GIN  cls Deterministic  10 balanced 0.851 1.271     0.753      1.030       1.234
+      GIN  cls Deterministic  10     base 0.753 1.030     0.753      1.030       1.000
+      GIN  cls Deterministic  10   pooled 0.769 1.059     0.753      1.030       1.028
+      GIN  cls Deterministic  20 balanced 0.861 1.270     0.754      1.030       1.233
+      GIN  cls Deterministic  20     base 0.754 1.030     0.754      1.030       1.000
+      GIN  cls Deterministic  20   pooled 0.785 1.087     0.754      1.030       1.055
+      GIN  cls Deterministic  20   target 0.901 1.388     0.754      1.030       1.348
+      GIN  cls Deterministic  50 balanced 0.869 1.282     0.755      1.029       1.245
+      GIN  cls Deterministic  50     base 0.755 1.029     0.755      1.029       1.000
+      GIN  cls Deterministic  50   pooled 0.826 1.164     0.755      1.029       1.131
+      GIN  cls Deterministic  50   target 0.910 1.405     0.755      1.029       1.365
+      GIN  cls Deterministic 100 balanced 0.866 1.275     0.755      1.029       1.238
+      GIN  cls Deterministic 100     base 0.755 1.029     0.755      1.029       1.000
+      GIN  cls Deterministic 100   pooled 0.851 1.229     0.755      1.029       1.194
+      GIN  cls Deterministic 100   target 0.902 1.378     0.755      1.029       1.339
+      GIN  cls       Laplace   0     base 0.753 1.031     0.753      1.031       1.000
+      GIN  cls       Laplace   5 balanced 0.851 1.305     0.752      1.031       1.266
+      GIN  cls       Laplace   5     base 0.752 1.031     0.752      1.031       1.000
+      GIN  cls       Laplace   5   pooled 0.759 1.043     0.752      1.031       1.012
+      GIN  cls       Laplace  10 balanced 0.850 1.266     0.752      1.030       1.228
+      GIN  cls       Laplace  10     base 0.752 1.030     0.752      1.030       1.000
+      GIN  cls       Laplace  10   pooled 0.769 1.059     0.752      1.030       1.027
+      GIN  cls       Laplace  20 balanced 0.862 1.267     0.753      1.031       1.230
+      GIN  cls       Laplace  20     base 0.753 1.031     0.753      1.031       1.000
+      GIN  cls       Laplace  20   pooled 0.785 1.087     0.753      1.031       1.055
+      GIN  cls       Laplace  20   target 0.900 1.381     0.753      1.031       1.341
+      GIN  cls       Laplace  50 balanced 0.869 1.276     0.754      1.030       1.239
+      GIN  cls       Laplace  50     base 0.754 1.030     0.754      1.030       1.000
+      GIN  cls       Laplace  50   pooled 0.825 1.164     0.754      1.030       1.130
+      GIN  cls       Laplace  50   target 0.910 1.398     0.754      1.030       1.358
+      GIN  cls       Laplace 100 balanced 0.866 1.270     0.754      1.030       1.234
+      GIN  cls       Laplace 100     base 0.754 1.030     0.754      1.030       1.000
+      GIN  cls       Laplace 100   pooled 0.850 1.224     0.754      1.030       1.189
+      GIN  cls       Laplace 100   target 0.902 1.373     0.754      1.030       1.333

@@ -1,0 +1,13 @@
+kind,contrast,base,stype,dataset,repeats,mean_delta,sd_delta,sign_all,cov_a,cov_b,both_hold_all,sign_interpretable
+cls,P1: Laplace - Deterministic,Uni-Mol,scaffold,bace,3,0.19517543859649109,0.05380633397537416,wider,0.9188596491228069,0.8859649122807017,True,wider
+cls,P1: Laplace - Deterministic,Uni-Mol,scaffold,bbbp,3,0.07189542483660127,0.05804679630173727,mixed,0.6797385620915032,0.6519607843137255,False,not interpretable
+cls,P1: Laplace - Deterministic,Uni-Mol,scaffold,clintox,3,-0.005630630630630666,0.00886712598424759,mixed,0.8209459459459459,0.8277027027027026,False,not interpretable
+cls,P1: Laplace - Deterministic,Uni-Mol,scaffold,tox21,3,-0.0002419409910835076,0.0008045408944359883,mixed,0.8991058752128857,0.89962932233637,True,mixed
+cls,P2: Laplace - Ensembles,Uni-Mol,scaffold,bace,3,0.1842105263157893,0.09365858115816944,wider,0.9188596491228069,0.875,True,wider
+cls,P2: Laplace - Ensembles,Uni-Mol,scaffold,bbbp,3,0.19281045751633982,0.16792743693694012,wider,0.6797385620915032,0.6470588235294118,False,not interpretable
+cls,P2: Laplace - Ensembles,Uni-Mol,scaffold,clintox,3,-0.015765765765765827,0.04276314762623316,mixed,0.8209459459459459,0.8344594594594593,False,not interpretable
+cls,P2: Laplace - Ensembles,Uni-Mol,scaffold,tox21,3,0.01568061482234273,0.008983230526530397,wider,0.8991058752128857,0.9004949249590837,True,wider
+cls,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,bace,3,0.09649122807017536,0.08532928271203388,wider,0.9254385964912281,0.9057017543859649,True,wider
+cls,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,bbbp,3,0.0032679738562091387,0.0046216129489316665,mixed,0.6797385620915032,0.6813725490196078,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,clintox,3,-0.021396396396396417,0.03038454406133345,mixed,0.8006756756756758,0.8186936936936937,False,not interpretable
+cls,P3: Novelty Laplace - Laplace constant,Uni-Mol,scaffold,tox21,3,-0.0005580770643199099,0.0003974903906182462,narrower,0.899037000211531,0.8991648513865114,True,narrower

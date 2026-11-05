@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-12T13:00:09.704600+00:00",
+  "backbone": "ChemBERTa",
+  "split": "scaffold",
+  "dataset": "bace",
+  "seeds": [
+    0,
+    100,
+    200
+  ],
+  "protocol_sha256": "0f767b8521636adc2088361204c8b1012d934333ed7d012c2fdb279160467bfa",
+  "code_sha256": "2b48373262d5d5b1baf178ff5a6890417946e2ce44c2af4cc2f97889473a7d0b",
+  "task_fits": 3,
+  "alpha_at_grid_boundary": [
+    {
+      "seed": 0,
+      "task": 0,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 100,
+      "task": 0,
+      "alpha": 0.0001
+    },
+    {
+      "seed": 200,
+      "task": 0,
+      "alpha": 0.0001
+    }
+  ],
+  "test_unopened_by_laplace": true
+}

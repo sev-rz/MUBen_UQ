@@ -1,0 +1,18 @@
+{
+  "state": "complete",
+  "stage": "expanded_reproduction_and_extension",
+  "at_utc": "2026-10-04T15:22:04.121642+00:00",
+  "datasets": [
+    "bace",
+    "bbbp",
+    "esol"
+  ],
+  "ensemble_members": 5,
+  "trained_models": 60,
+  "result_rows": 93,
+  "original_comparisons": 88,
+  "gpu_used": false,
+  "persistent_directory": "/l/users/sevinch.zoda/schub/projects/muben-laplace/work/expanded_v2",
+  "report_pages": 6,
+  "archive": "../muben_cpu_expanded.zip"
+}

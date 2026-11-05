@@ -1,0 +1,47 @@
+[
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Laplace wide",
+    "seed": 0,
+    "subgroup": "all",
+    "n": 113,
+    "rmse": 0.9109273245303141,
+    "mae": 0.6955747570166282,
+    "nll": 0.542467589440691,
+    "ce": 0.04518842262389606,
+    "ce_paired": 0.004903631739698533,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Laplace wide",
+    "seed": 100,
+    "subgroup": "all",
+    "n": 113,
+    "rmse": 0.9135832825876767,
+    "mae": 0.6921526805186343,
+    "nll": 0.47328061373058006,
+    "ce": 0.0417439215794225,
+    "ce_paired": 0.0026139581469925106,
+    "tasks_scored": 1
+  },
+  {
+    "backbone": "DNN",
+    "split": "scaffold",
+    "dataset": "esol",
+    "method": "Laplace wide",
+    "seed": 200,
+    "subgroup": "all",
+    "n": 113,
+    "rmse": 0.9141864002978987,
+    "mae": 0.6863446157105567,
+    "nll": 0.386303589222235,
+    "ce": 0.04025640755064834,
+    "ce_paired": 0.002021239762418029,
+    "tasks_scored": 1
+  }
+]
